@@ -1,0 +1,318 @@
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("https://g.lazcdn.com/g/lzdfe/static/0.0.29/Roboto/latin.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+.head {
+  /*transition: all 1s ease;*/
+  font-size: 12px;
+  font-family:
+    Roboto-Regular, "Helvetica Neue", Helvetica, Tahoma, Arial, sans-serif;
+  box-sizing: border-box;
+  z-index: 2;
+}
+
+.head.head-compact {
+  min-height: 0;
+}
+
+.head-top,
+.head-main {
+  max-width: 1188px;
+  width: auto;
+}
+
+.head-top {
+  height: 25px;
+  padding-top: 0;
+  gap: 37px;
+  align-items: center;
+}
+
+.header-cart {
+  padding-left: 29px;
+  padding-bottom: 3px;
+}
+
+.head-top a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 25px;
+  text-transform: uppercase;
+}
+
+.head-top a:hover {
+  opacity: 0.8;
+}
+
+
+.head-main {
+  padding: 15px 0;
+}
+
+.product-header {
+  padding: 11px 0px 4px 0px;
+}
+
+.logo-img {
+  width: auto;
+  height: 39px;
+  margin-right: 75px;
+}
+
+.search-button {
+  background: url(https://lzd-img-global.slatic.net/g/tps/imgextra/i4/O1CN01cwHWrW1dwuHpJheqe_!!6000000003801-2-tps-72-72.png)
+    center center / 22px no-repeat #ffe1d2;
+  width: 45px;
+  height: 45px;
+  border: 0;
+  border-radius: 0 2px 2px 0;
+  color: #9e9e9e;
+}
+
+.head-search input[type="search"],
+.head-search input[type="search"]:focus {
+  outline: none;
+  border: 0;
+  border-radius: 2px;
+  padding: 13px 19px;
+  width: 688px;
+  height: 45px;
+  box-sizing: border-box;
+  color: #212121;
+  font-family: Roboto-Regular, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+}
+
+.gap-div {
+  height: 18px;
+  max-height: 18px;
+  overflow: hidden;
+  transition:
+    max-height 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.gap-hidden {
+  max-height: 0;
+  opacity: 0;
+}
+
+.head-top {
+  max-height: 25px;
+  overflow: hidden;
+  transition:
+    max-height 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.head-top-hidden {
+  max-height: 0;
+  opacity: 0;
+}
+
+/* Product page contracted navbar: match Daraz.pk after the top action bar hides.
+   Live shifts the logo/search/cart row down by 4px (logo bar top padding 11px -> 15px). */
+.product-page .head.head-compact .head-main,
+.product-page .head.head-compact .product-header {
+  height: 75px;
+  padding: 15px 0 0;
+  align-items: flex-start;
+}
+
+.product-page .head.head-compact .nav-logo {
+  margin-top: 6px;
+}
+
+.product-page .head.head-compact .header-cart {
+  padding: 0;
+  margin-top: 7px;
+  position: relative;
+}
+
+.product-page .head.head-compact .header-cart svg {
+  position: absolute;
+  top: 3.5px;
+  left: 5px;
+  width: 30px;
+  height: 30px;
+  display: block;
+  margin: 0;
+  clip-path: inset(2px 0.5px 2px 0.5px);
+}
+
+.hot-keywords-container {
+  color: white;
+  width: 775px;
+  font-family:
+    Roboto-Regular, "Helvetica Neue", Helvetica, Tahoma, Arial, sans-serif;
+  font-size: 12px;
+  line-height: 13px;
+}
+
+.hot-keywords-container a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.hot-keywords-container a:hover {
+  opacity: 0.8;
+}
+
+.head-search input[type="search"]::placeholder {
+  color: #9e9e9e;
+}
+
+/* Desktop navbar spacing matched to daraz.pk (no header banner) */
+@media (min-width: 992px) {
+  .head-top {
+    gap: 3px;
+  }
+
+  .head-top a {
+    display: inline-block;
+    padding: 0 17px;
+    font-family:
+      Roboto-Regular, "Helvetica Neue", Helvetica, Tahoma, Arial, sans-serif;
+  }
+
+  .head-top a:last-child {
+    padding: 0 0 0 17px;
+  }
+
+  .head-main,
+  .product-header {
+    padding: 11px 0px 19px;
+  }
+
+  .nav-logo {
+    display: block;
+    width: 200px;
+    height: 39px;
+    margin-right: 3px;
+    overflow: visible;
+  }
+
+  .logo-img {
+    margin-right: 0;
+    height: 40px;
+    transform: none;
+  }
+
+  .head-search {
+    margin-right: 23px;
+  }
+
+  .header-cart {
+    display: block;
+    width: 40px;
+    height: 38px;
+    padding: 5px 5px 6px 6px;
+    margin: 0;
+  }
+
+  .gap-div {
+    display: inline-block;
+    width: 100%;
+    height: 15px;
+  }
+
+  /* Default home header: auto height so the inline-block gap line box expands to match Daraz (118.8px) */
+  body.has-recyclerview .head {
+    height: auto;
+    min-height: 0;
+    max-height: none;
+  }
+
+  body.has-recyclerview .head .gap-div {
+    height: 15px;
+    max-height: 15px;
+  }
+
+  /* Non-compact: match Daraz item positions (logo/cart sit slightly below the search bar) */
+  body.has-recyclerview .head:not(.head-compact) .head-main {
+    height: 75px;
+    padding-top: 11px;
+    padding-bottom: 15px;
+    align-items: flex-start;
+  }
+
+  body.has-recyclerview .head:not(.head-compact) .nav-logo {
+    margin-top: 6px;
+    margin-right: 2px;
+  }
+
+  body.has-recyclerview .head:not(.head-compact) .header-cart {
+    margin-top: 7px;
+  }
+
+  /* Compact home header: 75px total */
+  body.has-recyclerview .head.head-compact {
+    height: 75px;
+    min-height: 75px;
+    max-height: 75px;
+  }
+
+  body.has-recyclerview .head.head-compact .head-main {
+    height: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    align-items: flex-end;
+  }
+
+  body.has-recyclerview .head.head-compact .nav-logo,
+  body.has-recyclerview .head.head-compact .header-cart {
+    margin-top: 0;
+  }
+
+  body.has-recyclerview .head.head-compact .nav-logo {
+    margin-right: 2px;
+  }
+
+  .gap-div.gap-hidden {
+    max-height: 0;
+    opacity: 0;
+  }
+}
+
+/* Product-page hot-keywords sit below the search input inside the search box */
+.product-page .head-search {
+  overflow: visible;
+}
+
+.head-search .hot-keywords-container {
+  position: absolute;
+  top: calc(100% + 2px);
+  left: 0;
+  width: 100%;
+  margin: 0;
+  color: white;
+  font-size: 12px;
+  line-height: 13px;
+}
+
+/* Match Daraz hot-keywords layout: first item has right padding only,
+   subsequent items have 8px horizontal padding, 1px left offset. */
+.product-page .head-search .hot-keywords-container {
+  left: 1px;
+  font-size: 0;
+}
+
+.product-page .head-search .hot-keywords-container a {
+  float: left;
+  padding: 0 8px 0 0;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.product-page .head-search .hot-keywords-container a:not(:first-child) {
+  padding-left: 8px;
+}
