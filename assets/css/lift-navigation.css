@@ -1,0 +1,130 @@
+@font-face {
+  font-family: brand-icons;
+  src: url("https://g.lazcdn.com/g/lzdfe/static/0.0.48/iconfont-hp.eot");
+  src:
+    url("https://g.lazcdn.com/g/lzdfe/static/0.0.48/iconfont-hp.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://g.lazcdn.com/g/lzdfe/static/0.0.48/iconfont-hp.woff")
+      format("woff"),
+    url("https://g.lazcdn.com/g/lzdfe/static/0.0.48/iconfont-hp.ttf")
+      format("truetype");
+}
+
+/* Roboto-Regular @font-face removed — consolidated in styles.css */
+
+#component {
+  font-weight: 400;
+  color: #999;
+  font-size: 12px;
+  line-height: 1.15;
+  font-family: var(--font-primary);
+}
+
+i {
+  font-style: normal;
+}
+
+.lift-nav-container {
+  visibility: hidden;
+  z-index: 2;
+  width: 40px;
+  position: fixed;
+  bottom: 40px;
+  left: 0;
+  font-size: 12px;
+  line-height: 1.15;
+  font-family: var(--font-primary);
+  color: #999;
+}
+
+.lift-nav-container.show {
+  visibility: visible;
+}
+
+.lift-nav-container .lift-nav-box,
+.lift-nav-container .scroll-to-top-box {
+  box-sizing: content-box;
+}
+
+.lift-nav-container .lift-nav-box {
+  cursor: pointer;
+  text-align: center;
+  background-color: #f5f5f5;
+  border: 1px solid #fff;
+  width: 40px;
+  height: 40px;
+  margin: -1px;
+  line-height: 40px;
+  transition: width 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+.lift-nav-container .lift-nav-box:hover {
+  width: 200px;
+}
+
+.lift-nav-container .scroll-to-top-box {
+  cursor: pointer;
+  text-align: center;
+  visibility: hidden;
+  background-color: #f5f5f5;
+  border: 1px solid #fff;
+  width: 40px;
+  height: 43px;
+  margin: -1px;
+  line-height: 40px;
+}
+
+.lift-nav-container .scroll-to-top-box.show {
+  visibility: visible;
+}
+
+.lift-nav-container .lift-nav-text {
+  width: 40px;
+  height: 43px;
+  position: relative;
+  line-height: 40px;
+}
+
+.lift-nav-container .lift-nav-text .hovered-text {
+  color: #f57224;
+  text-align: left;
+  width: 130px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -140px;
+}
+
+.lift-nav-container .lift-nav-text .app-icon {
+  font-size: 20px;
+  width: auto;
+  height: auto;
+  line-height: 40px;
+}
+
+.lift-nav-container .lift-nav-text .app-icon.active {
+  color: #f57224;
+}
+
+.lift-nav-container .lift-nav-text .app-icon:hover {
+  color: #f57224;
+}
+
+.lift-nav-container .lift-nav-text:hover {
+  cursor: pointer;
+}
+
+
+.app-icon {
+  font-size: 16px;
+  font-style: normal;
+  font-family: brand-icons;
+  color: #999;
+  transition: color 0.2s ease;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+}
