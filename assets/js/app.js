@@ -1,3 +1,10 @@
+import {
+  injectHomepageProducts,
+  injectFlashSaleProducts,
+} from "./homepage-grid.js";
+import Swiper from "https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.mjs";
+
+// circular imports are safe — live bindings, all calls happen at runtime after DOMContentLoaded
 export function formatPrice(price) {
   if (!price && price !== 0) return '';
   return Number(price).toLocaleString('en-PK');
@@ -66,10 +73,30 @@ function init() {
   } else {
     getProductsData().then(function (d) {
       if (!d) return;
+      injectFlashSaleProducts(d.products);
+      injectHomepageProducts(d.products);
     });
 
     injectHeroSlides();
 
+    new Swiper(".hero-swiper", {
+      loop: true,
+      speed: 300,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+        pauseOnMouseEnter: true,
+      },
+      pagination: {
+        el: ".hero-swiper .swiper-pagination",
+        clickable: true,
+        type: "bullets",
+      },
+      navigation: {
+        nextEl: ".hero-swiper .swiper-button-next",
+        prevEl: ".hero-swiper .swiper-button-prev",
+      },
+    });
 
     initLiftNav();
   }
