@@ -1,0 +1,101 @@
+#js_categories {
+  font-weight: 400;
+  color: #999;
+  font-size: 12px;
+  line-height: 1.15;
+  font-family: var(--font-primary);
+}
+
+.category-grid-container {
+  padding-top: 24px;
+}
+
+.category-grid-container .category-list {
+  background-color: #fff;
+  width: 100%;
+  min-height: 297px;
+}
+
+.category-grid-container .category-item {
+  box-sizing: border-box;
+  background-color: #fff;
+  border-bottom: 1px solid #e2e2e2;
+  border-right: 1px solid #e2e2e2;
+  width: 12.5%;
+  height: 148.5px;
+  padding-top: 16px;
+  color: #000;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.category-grid-container .category-item:nth-child(8n) {
+  border-right: 0;
+}
+
+.category-grid-container .category-item:nth-child(9),
+.category-grid-container .category-item:nth-child(10),
+.category-grid-container .category-item:nth-child(11),
+.category-grid-container .category-item:nth-child(12),
+.category-grid-container .category-item:nth-child(13),
+.category-grid-container .category-item:nth-child(14),
+.category-grid-container .category-item:nth-child(15),
+.category-grid-container .category-item:nth-child(16) {
+  border-bottom: 0;
+}
+
+.category-grid-container .category-image {
+  width: 80px;
+  height: 80px;
+  display: block;
+}
+
+.category-grid-container .category-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.category-grid-container .category-name {
+  color: #212121;
+  height: 36px;
+  margin: 8px 12px 0;
+  font-size: 14px;
+  line-height: 18px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.category-grid-container .home-card {
+  max-width: 1188px;
+  width: auto;
+  margin: 0 auto;
+}
+
+.category-grid-container .home-card-header {
+  background: transparent;
+  height: 38px;
+  line-height: 38px;
+}
+
+.category-grid-container .home-card-header .home-card-title {
+  color: #424242;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 22px;
+  line-height: 38px;
+  overflow: hidden;
+  margin: 0;
+  font-family: var(--font-heading);
+  font-weight: 400;
+}
+
+.category-grid-container .category-item:hover {
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+  transition: box-shadow 0.3s ease-in-out;
+}
