@@ -2,8 +2,12 @@ import {
   injectHomepageProducts,
   injectFlashSaleProducts,
 } from "./homepage-grid.js";
+import { injectProductPageData } from "./product-detail.js";
+import { initReviews } from "./reviews-renderer.js";
+import { initQnA } from "./qna-renderer.js";
 import Swiper from "https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.mjs";
 
+// ponytail: merged from price-formatter.js, url-helpers.js, data-loader.js, hot-keywords-render.js
 // circular imports are safe — live bindings, all calls happen at runtime after DOMContentLoaded
 export function formatPrice(price) {
   if (!price && price !== 0) return '';
@@ -68,6 +72,9 @@ function init() {
   if (isProductPage) {
     getProductsData().then(function (d) {
       if (!d) return;
+      injectProductPageData(d.products, d.breadcrumbCategories);
+      initReviews(d.products);
+      initQnA(d.products);
     });
     initHotKeywords();
   } else {
