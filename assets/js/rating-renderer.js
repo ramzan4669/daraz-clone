@@ -74,6 +74,8 @@ export function buildSolidStarSvg(starIndex, targetValue) {
 }
 
 export function buildStarsPdpHtml(rating) {
+  if (rating == null || rating === '') return '';
+
   return (
     '<div class="i-rate rating-product-header">' +
     '<div class="container-star container-star-product-header">' +
