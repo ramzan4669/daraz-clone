@@ -1,0 +1,551 @@
+.modal-wrapper {
+  position: fixed;
+  /*inset: 0;*/
+  z-index: 3;
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.modal-wrapper.modal-open {
+  opacity: 1;
+}
+
+.modal-container {
+  background-color: #fff;
+  border-radius: 6px;
+  padding: 0;
+  color: #858b9c;
+  font-family: sans-serif;
+  font-size: 14px;
+  width: 444px;
+  height: 445px;
+  line-height: 1.2;
+  overflow: hidden;
+}
+
+.modal-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  opacity: 0;
+  transform: translateY(75%);
+  pointer-events: none;
+  z-index: 0;
+  transition: none;
+}
+
+.modal-container.switching .modal-content {
+  transition:
+    opacity 0.5s ease-in-out,
+    transform 0.5s ease-in-out;
+}
+
+.modal-wrapper.modal-open .modal-content.active {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+  z-index: 1;
+}
+
+.modal-container * {
+  font-family: inherit;
+  color: inherit;
+}
+
+.modal-container a:hover {
+  text-decoration: none;
+}
+
+/* ── Close Icon ── */
+
+.modal-close-icon {
+  position: absolute;
+  right: 24px;
+  top: 18px;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.modal-close-icon svg {
+  display: block;
+}
+
+.modal-close-icon path {
+  stroke: rgb(133, 139, 156);
+  stroke-width: 2.54;
+  stroke-linecap: round;
+}
+
+/* ── Login Tabs ── */
+
+.login-tabs-wrapper {
+  display: flex;
+  padding: 0 36px;
+  text-align: center;
+  margin-top: 26px;
+}
+
+.login-tab {
+  flex: 1;
+  font-size: 16px;
+  font-weight: 500;
+  color: rgb(133, 139, 156);
+  cursor: pointer;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.login-tab-active {
+  color: rgb(46, 51, 70);
+}
+
+.signup-title {
+  font-size: 16px;
+  font-weight: 500;
+  color: rgb(46, 51, 70);
+  text-align: center;
+  margin-top: 26px;
+  margin-bottom: 0;
+  line-height: 1.2;
+}
+
+/* ── Login Form ── */
+
+.login-form-wrapper {
+  padding: 0 36px;
+  margin-top: 36px;
+}
+
+.login-input {
+  width: 372px;
+  height: 48px;
+  border: 0.8px solid #cbced5;
+  border-radius: 6px;
+  padding: 2px 18px 0;
+  font-size: 14px;
+  font-family: sans-serif;
+  color: rgb(46, 51, 70);
+  box-sizing: border-box;
+  outline: none;
+}
+
+.login-input:focus {
+  border-color: #1e71ff;
+  box-shadow: 0 0 0 3px rgb(30 113 255 / 15%);
+}
+
+.login-input::placeholder {
+  color: #858b9c;
+}
+
+.login-password-wrapper {
+  position: relative;
+  margin-top: 18px;
+}
+
+.login-password-input {
+  padding-right: 48px;
+}
+
+.login-password-icon {
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.login-password-icon path {
+  stroke: rgb(133, 139, 156);
+  stroke-width: 2.54;
+}
+
+.login-forgot-link {
+  text-align: right;
+  margin-top: 6px;
+  font-size: 14px;
+  color: rgb(133, 139, 156);
+  cursor: pointer;
+  line-height: 1.2;
+}
+
+/* ── Login Button ── */
+
+.login-btn {
+  width: 372px;
+  height: 40px;
+  background-color: #f57224;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  margin-top: 25px;
+  padding: 0 18px;
+  text-align: center;
+  line-height: 40px;
+}
+
+.login-btn:hover {
+  background-color: #e5611a;
+}
+
+.login-hint {
+  margin-top: 12px;
+  font-size: 14px;
+  color: rgb(133, 139, 156);
+  text-align: center;
+  line-height: 1.2;
+}
+
+.login-bottom-section {
+  text-align: center;
+}
+
+/* ── Login Phone Tab ── */
+
+.login-phone-form-wrapper {
+  padding: 0 24px;
+  margin-top: 72px;
+}
+
+.login-phone-row {
+  display: flex;
+  width: 396px;
+  height: 48px;
+  gap: 6px;
+}
+
+.login-phone-prefix {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 82px;
+  height: 48px;
+  border: 0.8px solid #cbced5;
+  border-radius: 6px;
+  white-space: nowrap;
+  font-size: 14px;
+  font-family: sans-serif;
+  color: rgb(46, 51, 70);
+  padding-top: 4px;
+}
+
+.login-phone-input {
+  flex: 1;
+  border: 0.8px solid #cbced5;
+  border-radius: 6px;
+  outline: none;
+  padding: 2px 18px 0;
+  font-size: 14px;
+  font-family: sans-serif;
+  color: rgb(46, 51, 70);
+  width: 308px;
+  height: 48px;
+  box-sizing: border-box;
+}
+
+.login-phone-input:focus {
+  border-color: #1e71ff;
+  box-shadow: 0 0 0 3px rgb(30 113 255 / 15%);
+}
+
+.login-phone-input::placeholder {
+  color: #858b9c;
+}
+
+.login-whatsapp-btn {
+  display: flex;
+  align-items: center;
+  gap: 66px;
+  background-color: #f57224;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  width: 396px;
+  height: 40px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  margin-top: 49px;
+  padding: 0 18px;
+  line-height: 40px;
+}
+
+.login-whatsapp-btn:hover {
+  background-color: #e5611a;
+}
+
+.login-whatsapp-btn img {
+  width: 22px;
+  height: 22px;
+  margin-right: 8px;
+}
+
+/* ── Links ── */
+
+.signup-link,
+.signup-login-link {
+  color: #1e71ff;
+  text-decoration: none;
+}
+
+.signup-link:hover,
+.signup-login-link:hover {
+  text-decoration: underline;
+}
+
+.fgt-pass-link {
+  color: #858b9c;
+  margin-top: 6px;
+  margin-bottom: 0;
+}
+
+/* ── Signup Phone Input ── */
+
+.signup-form-wrapper {
+  padding: 0 24px;
+  margin-top: 49px;
+}
+
+.signup-phone-wrapper {
+  display: flex;
+  width: 396px;
+  height: 48px;
+  gap: 8px;
+  margin-bottom: 0;
+}
+
+.signup-phone-prefix {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 82px;
+  height: 48px;
+  border: 0.8px solid #cbced5;
+  border-radius: 6px;
+  white-space: nowrap;
+  font-size: 14px;
+  font-family: sans-serif;
+  color: rgb(46, 51, 70);
+  padding-top: 4px;
+}
+
+.signup-phone-flag {
+  font-size: 14px;
+  color: rgb(46, 51, 70);
+}
+
+.signup-phone-code {
+  font-size: 14px;
+  color: rgb(46, 51, 70);
+}
+
+.signup-phone-input {
+  flex: 1;
+  border: 0.8px solid #cbced5;
+  border-radius: 6px;
+  outline: none;
+  padding: 2px 18px 0;
+  font-size: 14px;
+  font-family: sans-serif;
+  color: rgb(46, 51, 70);
+  width: 306px;
+  height: 48px;
+  box-sizing: border-box;
+}
+
+.signup-phone-input:focus {
+  border-color: #1e71ff;
+  box-shadow: 0 0 0 3px rgb(30 113 255 / 15%);
+}
+
+.signup-phone-input::placeholder {
+  color: #858b9c;
+}
+
+/* ── Signup Terms ── */
+
+.signup-terms {
+  width: 396px;
+  margin-top: 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  line-height: 1.2;
+  color: rgb(133, 139, 156);
+}
+
+.signup-terms-label {
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+  cursor: pointer;
+  margin: 0;
+}
+
+.signup-terms-checkbox {
+  margin-top: 0;
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+  accent-color: #f57224;
+  border: 0.8px solid rgb(133, 139, 156);
+  border-radius: 4px;
+  appearance: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+  position: relative;
+}
+
+.signup-terms-checkbox:checked {
+  background-color: #f57224;
+  border-color: #f57224;
+}
+
+.signup-terms-checkbox:checked::after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 2px;
+  width: 5px;
+  height: 9px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.signup-terms-text {
+  text-align: left;
+  margin-left: 0;
+  line-height: 17px;
+}
+
+.signup-terms a {
+  color: #1e71ff;
+  text-decoration: none;
+}
+
+.signup-terms a:hover {
+  text-decoration: underline;
+}
+
+/* ── WhatsApp Button ── */
+
+.signup-whatsapp-btn {
+  display: flex;
+  align-items: center;
+  gap: 67px;
+  background-color: #f57224;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  width: 396px;
+  height: 40px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  margin-top: 24px;
+  /*padding: 0 18px;*/
+  line-height: 40px;
+  padding: 0px 18px;
+}
+
+.signup-whatsapp-btn:hover {
+  background-color: #e5611a;
+}
+
+.signup-whatsapp-btn img {
+  width: 22px;
+  height: 22px;
+  margin-right: 8px;
+}
+
+/* ── Signup Footer ── */
+
+.or-text {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 14px;
+  color: rgb(133, 139, 156);
+  text-align: center;
+  line-height: 1.2;
+}
+
+.signup-hint {
+  margin-top: 12px;
+  font-size: 14px;
+  color: rgb(133, 139, 156);
+  text-align: center;
+}
+
+.signup-bottom-section {
+  text-align: center;
+}
+
+.signup-social-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 18px;
+  margin-bottom: 24px;
+  height: 24px;
+  gap: 0;
+}
+
+.signup-social-btn {
+  display: flex;
+  align-items: center;
+  border: none;
+  background: none;
+  text-align: center;
+  cursor: pointer;
+  font-size: 14px;
+  color: rgb(133, 139, 156);
+  padding: 0;
+  margin-right: 30px;
+}
+
+.signup-social-btn span {
+  line-height: 1;
+}
+
+.signup-social-btn:last-child {
+  margin-right: 0;
+}
+
+.signup-social-btn svg {
+  width: 22px;
+  height: 22px;
+  margin-right: 6px;
+  display: block;
+}
+
+.mt-custom-12 {
+  margin-top: 9px;
+}
+
+.custom-mt-3 {
+  margin-top: 15px;
+}
+
+.custom-flex-gap {
+  gap: 14px;
+}
+
+.custom-flex-gap button img {
+  margin: 4px 4px;
+}
