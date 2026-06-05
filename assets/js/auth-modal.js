@@ -8,6 +8,7 @@ let switchTimeout = null;
 let pendingContent = null;
 
 function openModal() {
+  authScrollContainer.classList.add("overflow-y-hidden");
   modalWrapper.classList.remove("d-none");
   modalWrapper.classList.add("d-flex");
   void modalWrapper.offsetWidth;
@@ -25,6 +26,7 @@ function closeModal() {
   setTimeout(() => {
     modalWrapper.classList.remove("d-flex");
     modalWrapper.classList.add("d-none");
+    authScrollContainer.classList.remove("overflow-y-hidden");
   }, 200);
 }
 
