@@ -1,0 +1,715 @@
+/* ============================================================
+   Responsive Styles — Desktop-default approach
+   All rules scoped inside max-width media queries.
+   ZERO base-level rules = ZERO desktop impact.
+   Breakpoints: ≤991px (below desktop) | ≤768px (tablet) | ≤576px (mobile)
+   ============================================================ */
+
+/* ============================================================
+   LARGE LAPTOP / SMALL DESKTOP — max-width: 1200px
+   Keep the desktop look but make the layout fit narrower viewports
+   ============================================================ */
+
+@media (max-width: 1200px) {
+  /* ── Hero: hide sidebar, make swiper fill the width ── */
+  .hero-sidebar {
+    display: none;
+  }
+
+  .hero-swiper {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 988 / 344;
+  }
+
+  /* ── JFY Cards: keep 6 columns, fluid width ── */
+  .jfy-item {
+    width: calc((100% - 52.5px) / 6);
+    margin-right: 10.5px;
+  }
+
+  .jfy-item:nth-child(6n) {
+    margin-right: 0;
+  }
+
+  .jfy-section .jfy-item-image {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+  }
+
+  /* ── Flash Sale Cards: keep 6 columns, fluid width ── */
+  .flash-sale-section .jfy-item {
+    width: calc((100% - 60px) / 6);
+    margin-right: 12px;
+    height: auto;
+  }
+
+  .flash-sale-section .jfy-item:nth-child(6n) {
+    margin-right: 0;
+  }
+
+  .flash-sale-section .jfy-item-image {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+  }
+}
+
+/* ============================================================
+   BELOW DESKTOP — max-width: 991px
+   Everything that differs from the original desktop layout
+   ============================================================ */
+
+@media (max-width: 991px) {
+  /* ── Global ── */
+  html,
+  body {
+    overflow-x: hidden;
+    max-width: 100vw;
+  }
+
+  /* ── Containers ── */
+  .container-main {
+    max-width: 100%;
+    width: 100%;
+    padding: 0 12px;
+    box-sizing: border-box;
+  }
+
+  /* ── Header ── */
+  .head {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .header-top-bar {
+    min-width: 0;
+  }
+
+  .header-main {
+    min-width: 0;
+  }
+
+  .head-top,
+  .head-main {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin: 0 auto;
+  }
+
+  .head-main {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .head-search {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .head-search form {
+    display: flex;
+    width: 100%;
+  }
+
+  .head-search input[type="search"],
+  .head-search input[type="search"]:focus {
+    width: 100%;
+    max-width: 688px;
+    min-width: 0;
+    flex: 1;
+  }
+
+  .logo-img {
+    width: 115px;
+    height: 36px;
+    margin-right: 30px;
+    flex-shrink: 0;
+  }
+
+  .hot-keywords-container {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .hot-keywords-container::-webkit-scrollbar {
+    display: none;
+  }
+
+  .gap-div {
+    height: 15px;
+  }
+
+  /* ── Hero Section ── */
+  .hero-section .container-main {
+    padding: 0;
+  }
+
+  .hero-sidebar {
+    display: none;
+  }
+
+  .hero-slider-wrap {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .hero-swiper {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 988 / 344;
+  }
+
+  .pc-download-module {
+    display: none;
+  }
+
+  /* ── Site Nav Menu ── */
+  .site-nav-menu {
+    display: none;
+  }
+
+  /* ── Flash Sale ── */
+  .flash-sale-section .card-flash-content {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .card-flash-content-header {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  /* ── Category Grid: 4 columns ── */
+  .category-grid-container .category-item {
+    width: 25%;
+    height: auto;
+    padding: 12px 4px;
+  }
+
+  .category-grid-container .category-item:nth-child(8n) {
+    border-right: 1px solid #e2e2e2;
+  }
+
+  .category-grid-container .category-item:nth-child(4n) {
+    border-right: 0;
+  }
+
+  .category-grid-container .category-image {
+    width: 60px;
+    height: 60px;
+  }
+
+  .category-grid-container .category-name {
+    font-size: 11px;
+    line-height: 14px;
+    height: auto;
+    margin: 6px 4px 0;
+  }
+
+  .category-grid-container .category-list {
+    min-height: 0;
+  }
+
+  .category-grid-container .category-item:nth-child(9),
+  .category-grid-container .category-item:nth-child(10),
+  .category-grid-container .category-item:nth-child(11),
+  .category-grid-container .category-item:nth-child(12),
+  .category-grid-container .category-item:nth-child(13),
+  .category-grid-container .category-item:nth-child(14),
+  .category-grid-container .category-item:nth-child(15),
+  .category-grid-container .category-item:nth-child(16) {
+    border-bottom: 1px solid #e2e2e2;
+  }
+
+  .category-grid-container .category-item:nth-last-child(-n + 4) {
+    border-bottom: 0;
+  }
+
+  /* ── JFY Cards: 3 columns ── */
+  .jfy-item,
+  .flash-sale-section .jfy-item,
+  .product-page .product-related .jfy-item {
+    width: calc((100% - 20px) / 3);
+    margin-right: 10px;
+    min-height: 0;
+  }
+
+  .jfy-item:nth-child(6n) {
+    margin-right: 10px;
+  }
+
+  .jfy-item:nth-child(3n) {
+    margin-right: 0;
+  }
+
+  .jfy-section .jfy-item-image {
+    aspect-ratio: 1 / 1;
+    height: auto;
+    width: 100%;
+  }
+
+  .card-rec-title {
+    font-size: 13px;
+    line-height: 16px;
+    height: 32px;
+  }
+
+  .home-price .currency,
+  .home-price .price,
+  .home-price-first-line {
+    font-size: 14px;
+  }
+
+  /* ── Sale Banner ── */
+  .sale-banner-section img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* ── Product Page ── */
+  .product-page .product-container {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+
+  .product-page .product-block-gallery {
+    flex: 0 0 45%;
+    width: 45%;
+  }
+
+  .product-page .product-block-main-information-detail {
+    flex: 0 0 55%;
+    width: 55%;
+    display: block;
+  }
+
+  .product-page .product-block-product-detail {
+    padding: 0 12px;
+  }
+
+  .product-page .product-block-delivery-seller {
+    width: 100%;
+  }
+
+  .product-sidebar {
+    width: 100%;
+    flex: 0 0 100%;
+  }
+
+  .product-page #module_seller_info {
+    border: none;
+    border-top: 8px solid #eff0f5;
+  }
+
+  /* Gallery */
+  .gallery-preview-panel {
+    width: 100%;
+  }
+
+  .gallery-preview-panel-content {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+  }
+
+  .gallery-preview-panel-content img {
+    width: 100%;
+    height: auto;
+  }
+
+  .item-gallery {
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  .gallery-slider {
+    max-width: 100%;
+    overflow: hidden;
+    padding: 0 12px;
+  }
+
+  /* Zoom pane hidden below desktop */
+  .zoom-pane-container,
+  .drift-zoom-pane,
+  .drift-bounding-box {
+    display: none;
+  }
+
+  /* Thumbnail slider */
+  .thumb-slider-outer,
+  .thumb-slider {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .thumb-slider-inner {
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  .thumb-slider-list {
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  .thumb-slider-track {
+    display: flex;
+    gap: 6px;
+    max-width: 100%;
+    overflow-x: auto;
+  }
+
+  /* Product title */
+  .product-page .product-info-badge-title {
+    font-size: 18px;
+    line-height: 1.4;
+  }
+
+  /* Buttons */
+  .product-page .product-cart-concern {
+    width: 100%;
+    display: flex;
+    gap: 8px;
+  }
+
+  .product-page .add-to-cart-buy-now-btn {
+    flex: 1;
+    width: auto;
+  }
+
+  /* SKU selectors */
+  .product-page .sku-prop-selection {
+    flex-direction: column;
+  }
+
+  .product-page .sku-prop-selection .section-title {
+    width: auto;
+    margin-bottom: 8px;
+  }
+
+  .product-page .sku-prop-selection .section-content,
+  .product-page .sku-quantity-selection .section-content {
+    width: 100%;
+  }
+
+  /* ── Reviews ── */
+  .product-info-review {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .product-page .product-info-review {
+    max-width: 100%;
+    margin: 0 0 8px;
+  }
+
+  .product-info-review .mod-rating .left {
+    float: left;
+  }
+
+  .product-info-review .mod-rating .summary {
+    float: left;
+    width: 145px;
+    margin-right: 40px;
+  }
+
+  .product-info-review .mod-rating .detail {
+    float: left;
+  }
+
+  .product-info-filter-sort {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  /* ── QNA ── */
+  .product-block-qna {
+    max-width: 100%;
+    margin: 12px 0 0;
+  }
+
+  /* ── Product Detail Section ── */
+  .product-detail__section {
+    max-width: 100%;
+  }
+
+  .product-detail__body {
+    padding: 0 12px 16px;
+  }
+
+  .product-detail__title {
+    padding: 0 12px;
+  }
+
+  .product-detail__table {
+    width: 100%;
+  }
+
+  /* ── Seller Info ── */
+  .seller-container {
+    padding: 12px;
+  }
+
+  .guide-app {
+    display: none;
+  }
+
+  /* ── Footer ── */
+  .desktop-footer {
+    min-width: 0;
+  }
+
+  .footer-inner {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 12px;
+    box-sizing: border-box;
+  }
+
+  .footer-width-25 {
+    width: 25%;
+  }
+
+  .footer-width-50 {
+    width: 50%;
+  }
+
+  .footer-width-32 {
+    width: 33.333%;
+  }
+
+  .footer-country-text {
+    word-break: break-word;
+  }
+
+  /* ── Breadcrumb ── */
+  .breadcrumb-list {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 0 12px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .site-nav-menu .site-menu-nav-container {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* ── Lift Navigation ── */
+  .lift-nav-container {
+    display: none;
+  }
+
+  /* ── Messages Button ── */
+  .messages-button-container {
+    width: 120px;
+    height: auto;
+    border-radius: 0;
+    overflow: visible;
+  }
+
+  .messages-button {
+    width: 120px;
+    height: auto;
+  }
+}
+
+/* ============================================================
+   TABLET — max-width: 768px
+   ============================================================ */
+
+@media (max-width: 768px) {
+  /* Category Grid: stays 4 columns */
+  .category-grid-container .category-item {
+    padding: 10px 4px;
+  }
+
+  /* JFY Cards: 3 columns (same as ≤991) */
+
+  /* Product page: gallery + info still side by side */
+  .product-page .product-block-gallery {
+    flex: 0 0 45%;
+    width: 45%;
+  }
+
+  .product-page .product-block-main-information-detail {
+    flex: 0 0 55%;
+    width: 55%;
+  }
+
+  /* Footer: 2 columns */
+  .footer-width-25 {
+    width: 50%;
+  }
+
+  .footer-width-50 {
+    width: 100%;
+  }
+
+  .footer-width-32 {
+    width: 50%;
+  }
+
+  .footer-first .footer-app-downloads {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
+
+/* ============================================================
+   MOBILE — max-width: 576px
+   ============================================================ */
+
+@media (max-width: 576px) {
+  /* Header */
+  .head-main {
+    gap: 8px;
+  }
+
+  .logo-img {
+    width: 100px;
+    height: 32px;
+    margin-right: 12px;
+  }
+
+  /* JFY Cards: 2 columns */
+  .jfy-item,
+  .flash-sale-section .jfy-item,
+  .product-page .product-related .jfy-item {
+    width: calc((100% - 10px) / 2);
+    margin-right: 10px;
+  }
+
+  .jfy-item:nth-child(3n) {
+    margin-right: 10px;
+  }
+
+  .jfy-item:nth-child(2n) {
+    margin-right: 0;
+  }
+
+  .card-rec-title {
+    font-size: 12px;
+  }
+
+  /* Product page: single column */
+  .product-page .product-container {
+    flex-direction: column;
+  }
+
+  .product-page .product-block-gallery {
+    flex: none;
+    width: 100%;
+  }
+
+  .product-page .product-block-main-information-detail {
+    flex: none;
+    width: 100%;
+  }
+
+  .product-page .product-info-badge-title {
+    font-size: 16px;
+  }
+
+  /* Reviews: stack rating summary and detail */
+  .product-info-review .mod-rating .left {
+    float: none;
+    width: 100%;
+  }
+
+  .product-info-review .mod-rating .summary {
+    float: none;
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-info-review .mod-rating .detail {
+    float: none;
+    width: 100%;
+  }
+
+  .product-info-review .mod-reviews .item {
+    padding: 12px;
+  }
+
+  /* Footer: single column */
+  .footer-inner {
+    flex-direction: column;
+  }
+
+  .footer-width-25,
+  .footer-width-50,
+  .footer-width-32 {
+    width: 100%;
+    float: none;
+    margin-bottom: 20px;
+  }
+
+  .footer-first .footer-app-downloads .icon-appStore-footer,
+  .footer-first .footer-app-downloads .icon-android-footer,
+  .footer-first .footer-app-downloads .icon-huawei-footer {
+    margin-left: 0;
+    margin-top: 8px;
+  }
+
+  /* Messages button: compact circle */
+  .messages-button-container {
+    right: 50px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  .messages-button {
+    width: 48px;
+    height: 48px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .messages-button .messages-text {
+    display: none;
+  }
+
+  /* Breadcrumb */
+  .breadcrumb-list {
+    height: auto;
+    padding: 8px 12px;
+  }
+}
+
+/* Drift zoom overrides — must load after drift-basic.min.css (CDN).
+   responsive.css loads after the CDN in product.html, so these win by source order. */
+.drift-bounding-box {
+  background-color: rgba(26, 156, 183, 0.09);
+}
+
+.drift-zoom-pane {
+  transform: none;
+  transition: none;
+}
