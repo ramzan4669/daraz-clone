@@ -590,6 +590,10 @@
     margin-right: 12px;
   }
 
+  .gap-div {
+    height: 8px;
+  }
+
   /* JFY Cards: 2 columns */
   .jfy-item,
   .flash-sale-section .jfy-item,
