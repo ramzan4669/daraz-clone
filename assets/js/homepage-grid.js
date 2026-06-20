@@ -4,7 +4,7 @@ export function injectFlashSaleProducts(products) {
   const fsSection = document.getElementById('js_flashSale');
   if (!fsSection) return;
 
-  const fsContent = fsSection.querySelector('.flash-sale-content');
+  const fsContent = fsSection.querySelector('.card-flash-content');
   if (!fsContent) return;
 
   fsContent.innerHTML = '';

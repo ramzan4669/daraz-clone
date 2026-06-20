@@ -1,7 +1,7 @@
 import { formatPrice } from "./app.js";
 
 export function createJfyCard(product, isFlashSale) {
-  const hasDiscount = product.discount && product.discount !== "0";
+  const hasDiscount = product.discount && product.discount !== "0%";
 
   let priceSectionHtml = "";
 
