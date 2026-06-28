@@ -12,7 +12,7 @@ export function buildStarSvg(starIndex, rating, prefix) {
   const r = clampRating(rating);
   const fullGold = starIndex <= Math.floor(r);
   const isPartial = starIndex === Math.ceil(r) && r % 1 !== 0;
-  const fillPercentage = isPartial ? Math.floor((r % 1) * 100) : 100;
+  const fillPercentage = isPartial ? Math.round((r % 1) * 100) : 100;
 
   const grayPath =
     '<path fill-rule="evenodd" clip-rule="evenodd" d="' +
