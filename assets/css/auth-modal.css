@@ -405,7 +405,6 @@
   border: 0.8px solid rgb(133, 139, 156);
   border-radius: 4px;
   appearance: none;
-  -webkit-appearance: none;
   cursor: pointer;
   position: relative;
 }

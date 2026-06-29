@@ -136,7 +136,6 @@
     max-width: 100%;
     overflow-x: auto;
     white-space: nowrap;
-    -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
   }
 
@@ -181,7 +180,6 @@
   /* ── Flash Sale ── */
   .flash-sale-section .card-flash-content {
     overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
   }
 
   .card-flash-content-header {
@@ -355,7 +353,6 @@
     width: 100%;
     max-width: 100%;
     overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
   }
 
   .thumb-slider-inner {
@@ -505,7 +502,6 @@
     box-sizing: border-box;
     padding: 0 12px;
     overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
   }
 
   .site-nav-menu .site-menu-nav-container {
