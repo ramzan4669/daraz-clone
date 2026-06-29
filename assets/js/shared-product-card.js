@@ -35,9 +35,13 @@ export function createJfyCard(product, isFlashSale) {
       ? '<span class="home-discount"> -' + product.discount + "</span>"
       : "";
 
+    const ratingSummary = product.reviews?.summary;
+    const rating = ratingSummary ? ratingSummary.averageRating : product.rating;
+    const ratingCount = ratingSummary ? ratingSummary.totalRatings : product.ratingCount;
+
     let ratingHtml = "";
-    if (product.rating) {
-      const ratingWidth = Math.round((product.rating / 5) * 100);
+    if (rating) {
+      const ratingWidth = Math.round((rating / 5) * 100);
       ratingHtml =
         '<div class="d-flex flex-row align-items-end">' +
         '<div class="card-rec-ratings">' +
@@ -51,7 +55,7 @@ export function createJfyCard(product, isFlashSale) {
         "</div>" +
         "</div>" +
         '<div class="card-rec-ratings-comment">(' +
-        (Number(product.ratingCount) || "") +
+        (Number(ratingCount) || "") +
         ")</div>" +
         "</div>";
     }

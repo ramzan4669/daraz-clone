@@ -71,7 +71,7 @@ function getReviewSummary(product) {
       ),
     };
   }
-  return calculateSummaryFromReviews(product?.reviews?.items || []);
+  return calculateSummaryFromReviews(product?.reviews?.reviews || []);
 }
 
 function renderStarsForDisplay(rating) {
@@ -380,7 +380,7 @@ function getPageNumbers(current, total) {
 }
 
 function goToPage(page) {
-  const reviews = currentProduct?.reviews?.items;
+  const reviews = currentProduct?.reviews?.reviews;
   if (!Array.isArray(reviews)) return;
   const totalPages = Math.max(
     1,
@@ -388,7 +388,7 @@ function goToPage(page) {
   );
   if (page < 1 || page > totalPages) return;
   currentPage = page;
-  renderReviews(currentProduct.reviews.items);
+  renderReviews(currentProduct.reviews.reviews);
   scrollToReviews();
 }
 
@@ -454,7 +454,7 @@ function wireOptions(selector, key, setVal, labelId, dropdown) {
       document.getElementById(labelId).textContent = option.textContent;
       if (dropdown) setDropdownState(dropdown, false);
       if (currentProduct && currentProduct.reviews) {
-        renderReviews(currentProduct.reviews.items);
+        renderReviews(currentProduct.reviews.reviews);
       }
     });
   });
@@ -511,7 +511,7 @@ export function initReviews(products) {
     return;
   }
 
-  const reviewItems = currentProduct.reviews.items || [];
+  const reviewItems = currentProduct.reviews.reviews || [];
   const summary = getReviewSummary(currentProduct);
   renderRatingSummary(summary);
   renderStarDistribution(summary.starDistribution || {});
