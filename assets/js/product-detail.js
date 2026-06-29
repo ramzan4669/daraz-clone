@@ -256,20 +256,24 @@ function updateRating(product) {
   const reviewSection = document.getElementById("product-rating");
   if (!reviewSection) return;
 
-  if (!product.rating) {
+  const summary = product?.reviews?.summary;
+  const rating = summary ? summary.averageRating : product.rating;
+  const ratingCount = summary ? summary.totalRatings : product.ratingCount;
+
+  if (!rating) {
     reviewSection.innerHTML =
       '<a class="product-link product-link-size-s product-link-theme-blue product-review-summary-link">No Ratings</a>';
     return;
   }
 
-  const starsHtml = buildStarsPdpHtml(product.rating);
+  const starsHtml = buildStarsPdpHtml(rating);
 
   reviewSection.innerHTML =
     '<div class="product-review-summary-stars product-stars-size-s">' +
     starsHtml +
     "</div>" +
     '<a class="product-link product-link-size-s product-link-theme-blue product-review-summary-link">' +
-    Number(product.ratingCount) +
+    Number(ratingCount) +
     " Ratings</a>" +
     '<div class="product-review-summary-divider"></div>' +
     '<a class="product-link product-link-size-s product-link-theme-blue product-review-summary-link">' +
@@ -493,8 +497,12 @@ function updateSellerInfo(product) {
 
   const sellerRatings = document.getElementById("seller-ratings");
   if (sellerRatings) {
-    sellerRatings.textContent = "93%";
-    sellerRatings.classList.toggle("rating-positive", true);
+    if (product.sellerRating != null) {
+      sellerRatings.textContent = product.sellerRating + "%";
+      sellerRatings.classList.toggle("rating-positive", product.sellerRating >= 90);
+    } else {
+      sellerRatings.parentElement.style.display = "none";
+    }
   }
 
   const sellerShips = document.getElementById("seller-ships");
