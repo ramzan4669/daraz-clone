@@ -2950,7 +2950,7 @@
 .product-detail__section {
   width: 100%;
   max-width: 988px;
-  margin: 12px 35px 46px;
+  margin: 12px 45px 46px;
   background: #fff;
   box-sizing: border-box;
 }
@@ -3153,7 +3153,7 @@
   width: 100%;
   max-width: 1188px;
   box-sizing: border-box;
-  margin: 13px auto;
+  margin: 16px 45px;
   padding: 0 0 20px;
   border-top: none;
   background: transparent;
