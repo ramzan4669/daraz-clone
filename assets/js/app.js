@@ -34,7 +34,7 @@ function initHotKeywords() {
     if (!container) return;
     container.innerHTML = d.hotKeywords
       .map(function (k) { return '<a href="/">' + k + '</a>'; })
-      .join('<span class="sep">&nbsp;&nbsp;|&nbsp;&nbsp;</span>');
+      .join(' <span style="opacity: 0.75; font-size: 12px;">|</span> ');
   });
 }
 
