@@ -1,115 +1,10 @@
+import Swiper from "https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.mjs";
+import { getProductsData } from "./utils.js";
 import {
   injectHomepageProducts,
   injectFlashSaleProducts,
 } from "./homepage-grid.js";
-import { injectProductPageData } from "./product-detail.js";
-import { initReviews } from "./reviews-renderer.js";
-import { initQnA } from "./qna-renderer.js";
-import Swiper from "https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.mjs";
-
-// ponytail: merged from price-formatter.js, url-helpers.js, data-loader.js, hot-keywords-render.js
-// circular imports are safe — live bindings, all calls happen at runtime after DOMContentLoaded
-export function formatPrice(price) {
-  if (!price && price !== 0) return '';
-  return Number(price).toLocaleString('en-PK');
-}
-
-export function getCurrentProductId() {
-  const n = parseInt(new URLSearchParams(window.location.search).get('id'), 10);
-  return Number.isNaN(n) ? null : n;
-}
-
-const DATA_URL = 'data/products.json';
-let dataPromise = null;
-export function getProductsData() {
-  return dataPromise = dataPromise || fetch(DATA_URL)
-    .then(r => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
-    .catch(e => { console.error('Products load failed:', e.message); dataPromise = null; return null; });
-}
-
-function initHotKeywords() {
-  getProductsData().then(function (d) {
-    if (!d || !d.hotKeywords) return;
-    const container = document.querySelector('.hot-keywords-container');
-    if (!container) return;
-    container.innerHTML = d.hotKeywords
-      .map(function (k) { return '<a href="/">' + k + '</a>'; })
-      .join('<span class="sep">&nbsp;&nbsp;|&nbsp;&nbsp;</span>');
-  });
-}
-
-function initCategoriesDropdown() {
-  const catLabel = document.querySelector(".site-menu-nav-category-label");
-  const catDiv = document.querySelector(".site-menu-nav-category");
-  const menu = document.querySelector(".site-menu-nav-menu");
-  if (!catLabel || !catDiv || !menu) return;
-
-  let hideTimeout = null;
-
-  function showMenu() {
-    clearTimeout(hideTimeout);
-    catDiv.classList.add("label-hovered");
-  }
-
-  function hideMenu() {
-    hideTimeout = setTimeout(function () {
-      catDiv.classList.remove("label-hovered");
-    }, 150);
-  }
-
-  catLabel.addEventListener("mouseenter", showMenu);
-  catLabel.addEventListener("mouseleave", hideMenu);
-
-  menu.addEventListener("mouseenter", function () {
-    clearTimeout(hideTimeout);
-  });
-  menu.addEventListener("mouseleave", hideMenu);
-}
-
-function init() {
-  const isProductPage = window.location.pathname.includes("product.html");
-
-  if (isProductPage) {
-    getProductsData().then(function (d) {
-      if (!d) return;
-      injectProductPageData(d.products, d.breadcrumbCategories);
-      initReviews(d.products);
-      initQnA(d.products);
-    });
-    initHotKeywords();
-  } else {
-    getProductsData().then(function (d) {
-      if (!d) return;
-      injectFlashSaleProducts(d.products);
-      injectHomepageProducts(d.products);
-    });
-
-    injectHeroSlides();
-
-    new Swiper(".hero-swiper", {
-      loop: true,
-      speed: 300,
-      autoplay: {
-        delay: 5000,
-        disableOnInteraction: false,
-        pauseOnMouseEnter: true,
-      },
-      pagination: {
-        el: ".hero-swiper .swiper-pagination",
-        clickable: true,
-        type: "bullets",
-      },
-      navigation: {
-        nextEl: ".hero-swiper .swiper-button-next",
-        prevEl: ".hero-swiper .swiper-button-prev",
-      },
-    });
-
-    initLiftNav();
-  }
-
-  initCategoriesDropdown();
-}
+import { initCategoriesDropdown } from "./site-chrome.js";
 
 const heroSlides = [
   {
@@ -195,12 +90,6 @@ function injectHeroSlides() {
     .join("");
 }
 
-if (document.readyState === "loading") {
-  document.addEventListener("DOMContentLoaded", init);
-} else {
-  init();
-}
-
 function initLiftNav() {
   const liftNav = document.getElementById("lift-nav");
   if (!liftNav) return;
@@ -272,4 +161,42 @@ function initLiftNav() {
     const section = document.getElementById(item.id);
     if (section) observer.observe(section);
   });
+}
+
+function init() {
+  getProductsData().then(function (d) {
+    if (!d) return;
+    injectFlashSaleProducts(d.products);
+    injectHomepageProducts(d.products);
+  });
+
+  injectHeroSlides();
+
+  new Swiper(".hero-swiper", {
+    loop: true,
+    speed: 300,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+      pauseOnMouseEnter: true,
+    },
+    pagination: {
+      el: ".hero-swiper .swiper-pagination",
+      clickable: true,
+      type: "bullets",
+    },
+    navigation: {
+      nextEl: ".hero-swiper .swiper-button-next",
+      prevEl: ".hero-swiper .swiper-button-prev",
+    },
+  });
+
+  initLiftNav();
+  initCategoriesDropdown();
+}
+
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", init);
+} else {
+  init();
 }

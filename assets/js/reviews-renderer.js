@@ -7,7 +7,7 @@ import {
   buildSimpleStarsHtml,
   buildSolidStarSvg,
 } from "./rating-renderer.js";
-import { getCurrentProductId } from "./app.js";
+import { getCurrentProductId } from "./utils.js";
 
 let currentProduct = null;
 let currentPage = 1;

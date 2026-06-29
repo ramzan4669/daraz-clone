@@ -1,4 +1,4 @@
-import { formatPrice } from "./app.js";
+import { formatPrice } from "./utils.js";
 
 export function createJfyCard(product, isFlashSale) {
   const hasDiscount = product.discount && product.discount !== "0%";

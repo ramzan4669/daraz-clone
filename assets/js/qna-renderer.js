@@ -1,4 +1,4 @@
-import { getCurrentProductId } from './app.js';
+import { getCurrentProductId } from './utils.js';
 
 var QNA_ICON_Q =
   '<svg class="icon-font icon-font-svg svg-font qna-icon qna-icon-q" viewBox="0 0 1024 1024">' +
