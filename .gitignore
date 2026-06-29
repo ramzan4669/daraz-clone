@@ -3,4 +3,3 @@ node_modules/
 *.log
 
 .playwright-mcp/
-baseline-*.png
