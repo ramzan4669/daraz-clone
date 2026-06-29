@@ -1,0 +1,591 @@
+.desktop-footer {
+  font-weight: 200;
+  color: #999;
+  font-size: 12px;
+  line-height: 13.8px;
+  font-family: sans-serif;
+}
+
+.home-page .desktop-footer,
+.home-page .desktop-footer b,
+.home-page .desktop-footer strong {
+  font-family: NotoSans-Regular, sans-serif;
+}
+
+.footer-country-text {
+  font-weight: 200;
+  font-size: 14px;
+  line-height: 16.1px;
+}
+
+body {
+  background-color: #f5f5f5;
+}
+
+.footer-inner {
+  max-width: 1188px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-width-25 {
+  width: 25%;
+  flex-shrink: 0;
+}
+
+.footer-width-50 {
+  width: 50%;
+  flex-shrink: 0;
+}
+
+.footer-title {
+  font-size: 16px;
+  font-weight: 300;
+  color: #0f136d;
+  line-height: 35px;
+  margin: 0;
+}
+
+.footer-fourth .footer-title {
+  color: #606060;
+  line-height: 20px;
+  margin: 5px 10px 5px 0;
+}
+
+.footer-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-list li {
+  padding: 0;
+  margin: 0;
+  line-height: 17px;
+  font-size: 12px;
+  height: 17px;
+}
+
+.footer-list a {
+  font-size: 12px;
+  color: #0f136d;
+  line-height: 17px;
+  display: inline;
+  font-weight: 200;
+}
+
+.footer-list a:hover {
+  text-decoration: underline;
+}
+
+.footer-first {
+  background: #f4f4f6;
+  padding: 20px 0 25px;
+}
+
+.footer-second {
+  background: #fff;
+  padding: 20px 0 25px;
+  color: #999;
+}
+
+.footer-third {
+  background: #f4f4f6;
+  padding: 60px 0 40px;
+  color: #888;
+}
+
+.footer-left {
+  columns: 2;
+}
+
+.footer-about {
+  font-size: 12px;
+  font-weight: 200;
+  color: #888;
+  line-height: 13.8px;
+  margin: 0;
+  break-inside: auto;
+}
+
+.footer-about p {
+  font-size: 12px;
+  color: #888;
+  line-height: 13.8px;
+  margin: 6px 0 12px;
+}
+
+.footer-top-category {
+  font-size: 12px;
+  color: #888;
+}
+
+.footer-cat-links a {
+  font-size: 11px;
+  color: #888;
+}
+
+.footer-cat-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-fourth {
+  background: #fff;
+  padding: 40px 0;
+  color: #606060;
+}
+
+.footer-app-downloads {
+  display: flex;
+  align-items: flex-start;
+}
+
+.footer-app-stores a {
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+.footer-app-stores img {
+  display: block;
+}
+
+.footer-width-32 {
+  width: 32%;
+  flex-shrink: 0;
+}
+
+.footer-second .footer-title {
+  color: #183544;
+  font-weight: 400;
+  line-height: 35.2px;
+  margin: 0 0 15px;
+}
+
+.site-icon-payment {
+  display: inline-block;
+  margin-right: 4px;
+  margin-bottom: 4px;
+  vertical-align: baseline;
+}
+
+.site-icon-payment img {
+  display: block;
+}
+
+.footer-verified {
+  margin-top: 8px;
+}
+
+.footer-verified-item {
+  display: inline-block;
+}
+
+.footer-venture-list {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-top: 0;
+}
+
+.footer-country {
+  display: flex;
+  align-items: center;
+  margin-right: 0;
+  margin-bottom: 0;
+  font-size: 12px;
+  font-weight: 200;
+  color: #888;
+}
+
+.footer-country span {
+  font-size: 14px;
+  font-weight: 200;
+  color: #888;
+  margin-left: 7px;
+  margin-right: 15px;
+}
+
+.footer-country img {
+  margin-right: 0;
+  border-radius: 0;
+}
+
+.footer-social a {
+  display: block;
+  margin-right: 17px;
+}
+
+.footer-social a:last-child {
+  margin-right: 0;
+}
+
+.footer-social img {
+  display: inline;
+}
+
+.footer-copyright {
+  color: #606060;
+  font-size: 12px;
+  font-weight: 200;
+  line-height: 13.8px;
+  text-align: start;
+}
+
+/* Desktop Footer Component Styles */
+.desktop-footer {
+  width: 100%;
+  min-width: 0;
+  padding: 0;
+  font-size: 12px;
+  font-weight: 200;
+  position: relative;
+  left: 0;
+  background-color: rgb(245, 245, 245);
+}
+
+.desktop-footer a {
+  color: #888;
+  text-decoration: none;
+}
+
+.desktop-footer a:hover {
+  text-decoration: underline;
+}
+
+.desktop-footer h3,
+.desktop-footer h1,
+.desktop-footer h4 {
+  color: #fff;
+}
+
+.pull-left {
+  float: left;
+}
+
+.clear {
+  clear: both;
+}
+
+.footer-first {
+  color: #fff;
+  background-color: #f4f4f6;
+  padding: 20px 0 25px;
+}
+
+.footer-first .footer-title {
+  color: #0f136d;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 35px;
+}
+
+.footer-first .footer-list {
+  margin: 0;
+  padding: 0;
+}
+
+.footer-first .footer-li {
+  font-weight: 200;
+  line-height: 17px;
+  list-style: none;
+}
+
+.footer-first .footer-li > a,
+.footer-first .footer-li > span {
+  color: #0f136d;
+}
+
+.footer-first .footer-app-downloads {
+  margin-top: 25px;
+}
+
+.footer-first .footer-app-downloads .icon-logo-app-footer {
+  background-size: cover;
+  width: 42px;
+  height: 42px;
+}
+
+.footer-first .footer-app-downloads .site-app-download-text {
+  padding: 0 15px;
+}
+
+.footer-first .footer-app-downloads .site-app-download-text .title {
+  color: #f36f36;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.15em;
+}
+
+.footer-first .footer-app-downloads .site-app-download-text .text {
+  color: #0f136d;
+  padding-top: 2px;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.15em;
+}
+
+.footer-first .footer-app-downloads .icon-appStore-footer {
+  width: 126px;
+  height: 42px;
+  margin: 1px 0 0 20px;
+}
+
+.footer-first .footer-app-downloads .icon-android-footer {
+  width: 128px;
+  height: 43px;
+  margin: 0 0 0 10px;
+}
+
+.footer-first .footer-app-downloads .icon-huawei-footer {
+  width: 126px;
+  height: 42px;
+  margin: 10px 0 0 20px;
+}
+
+.footer-first .footer-app-downloads .icon-logo-app-footer img {
+  width: 100%;
+  height: 100%;
+}
+
+.footer-app-stores {
+  width: 290px;
+}
+
+.footer-app-stores img {
+  width: 100%;
+  height: 100%;
+}
+
+.site-icon-payment-brand img {
+  height: 28px;
+  width: 100%;
+}
+
+.footer-third h1.footer-title {
+  width: 256px;
+}
+
+.footer-third-new b {
+  font-weight: 600;
+}
+
+.footer-second {
+  background-color: #fff;
+  padding: 0px 0 25px;
+}
+
+.footer-second .footer-h3 {
+  color: #183544;
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 2.2em;
+}
+
+.footer-second .payment-card-list-brand {
+  margin-right: 20px;
+}
+
+.footer-second .payment-card-list .site-icon-payment {
+  margin: 0 25px 10px 0;
+  display: inline-block;
+}
+
+.footer-second .payment-card-list .site-icon-payment-brand {
+  margin: 0 4px 4px 0;
+}
+
+.footer-second .footer-verified {
+  display: flex;
+}
+
+.footer-second .footer-verified-left,
+.footer-second .footer-verified-item {
+  margin-bottom: 10px;
+}
+
+.footer-third {
+  color: #888;
+  background-color: #f4f4f6;
+  padding: 60px 0 40px;
+}
+
+.footer-third .footer-title-small {
+  color: #606060;
+  text-transform: uppercase;
+  margin: 0;
+  font-size: 11px;
+  font-weight: 300;
+  line-height: 15px;
+}
+
+.footer-third .footer-category-tag {
+  height: 15px;
+  font-size: 11px;
+  line-height: 15px;
+  display: inline-block;
+}
+
+.footer-third .footer-tag-margin {
+  margin-top: 15px;
+}
+
+.footer-third .footer-categoty-margin {
+  margin-bottom: 12px;
+}
+
+.footer-third .footer-inner {
+  display: block;
+  overflow: hidden;
+}
+
+.footer-third .footer-left {
+  column-count: 2;
+}
+
+.footer-third .footer-about,
+.footer-third .footer-top-category {
+  padding-right: 25%;
+}
+
+.footer-third .footer-third-new p {
+  margin-top: 6px;
+  margin-bottom: 12px;
+  line-height: 14px;
+}
+
+.footer-third .footer-title {
+  color: #606060;
+  margin: 0 0 5px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 20px;
+}
+
+.footer-fourth {
+  color: #606060;
+  background-color: #fff;
+  padding: 40px 0;
+}
+
+.footer-fourth .footer-title {
+  color: #2a2a2a;
+  margin: 5px 10px 5px 0;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 20px;
+}
+
+.footer-fourth .footer-venture-list {
+  display: flex;
+}
+
+.footer-fourth .footer-venture-list .footer-country {
+  width: 34px;
+  height: 34px;
+}
+
+.footer-fourth .footer-venture-list .footer-country-with-text {
+  align-items: center;
+  width: auto;
+  height: auto;
+  display: flex;
+}
+
+.footer-fourth
+  .footer-venture-list
+  .footer-country-with-text
+  .footer-country-image {
+  width: 28px;
+  height: 28px;
+}
+
+.footer-fourth
+  .footer-venture-list
+  .footer-country-with-text
+  .footer-country-text {
+  font-family:
+    Roboto-Regular, "Helvetica Neue", Helvetica, Tahoma, Arial, sans-serif;
+  font-weight: 200;
+  font-size: 14px;
+  line-height: 16.1px;
+}
+
+.footer-fourth .footer-copyright {
+  color: #606060;
+  float: right;
+  font-size: 14px;
+  font-weight: 200;
+  line-height: 30px;
+}
+
+.footer-fourth .site-follow-us-icon-list {
+  align-items: center;
+  display: flex;
+}
+
+.footer-fourth .site-follow-us-icon-list .site-follow-us-icon {
+  width: 32px;
+  height: 32px;
+  margin-right: 2px;
+}
+
+.footer-fourth .site-follow-us-icon-list .site-follow-us-icon:last-child {
+  margin-right: 0;
+}
+
+.footer-fourth .site-follow-us-icon-list .site-follow-us-icon-brand {
+  width: 28px;
+  height: 28px;
+  margin-right: 17px;
+}
+
+.footer-fourth .site-follow-us-icon-list .site-follow-us-icon:hover {
+  cursor: pointer;
+}
+
+.footer-fourth .site-follow-us-icon-list .site-follow-us-icon img {
+  width: 100%;
+  height: 100%;
+}
+
+.footer-inner {
+  max-width: 1188px;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.footer-width-50 {
+  float: left;
+  width: 50%;
+  overflow: hidden;
+}
+
+.footer-width-25 {
+  float: left;
+  width: 25%;
+  overflow: hidden;
+}
+
+.footer-width-32 {
+  float: left;
+  width: 32%;
+  overflow: hidden;
+}
+
+/* Override footer country text to be bolder and larger */
+.footer-fourth
+  .footer-venture-list
+  .footer-country-with-text
+  .footer-country-text {
+  font-family:
+    Roboto-Regular, "Helvetica Neue", Helvetica, Tahoma, Arial, sans-serif;
+  font-weight: 200;
+  font-size: 14px;
+  line-height: 16.1px;
+}
+

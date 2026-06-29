@@ -1,0 +1,297 @@
+/* ============================================================
+   Consolidated @font-face declarations (single source of truth)
+   ============================================================ */
+
+/* NotoSans-Regular — mapped to Euclid Circular A fonts (brand standard) */
+
+@font-face {
+  font-family: "NotoSans-Regular";
+  font-weight: 400;
+  src: url("//g.lazcdn.com/g/lzd/assets/1.2.13/font/EuclidCircularA-Regular.woff2")
+    format("woff2");
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: "NotoSans-Regular";
+  font-weight: 500;
+  src: url("//g.lazcdn.com/g/lzd/assets/1.2.13/font/EuclidCircularA-Medium.woff2")
+    format("woff2");
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: "NotoSans-Regular";
+  font-weight: 600;
+  src: url("//g.lazcdn.com/g/lzd/assets/1.2.13/font/EuclidCircularA-Bold.woff2")
+    format("woff2");
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: "NotoSans-Regular";
+  font-weight: 700;
+  src: url("//g.lazcdn.com/g/lzd/assets/1.2.13/font/EuclidCircularA-Bold.woff2")
+    format("woff2");
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src:
+    local("Roboto"),
+    local("Roboto-Regular"),
+    url("https://g.lazcdn.com/g/lzdfe/static/0.0.29/Roboto/latin.woff2")
+      format("woff2"),
+    url("https://g.lazcdn.com/g/lzdfe/static/0.0.29/Roboto/latin-ext.woff2")
+      format("woff2");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src:
+    local("Roboto Medium"),
+    local("Roboto-Medium"),
+    url("https://g.lazcdn.com/g/lzdfe/static/0.0.29/Roboto-Medium/latin.woff2")
+      format("woff2");
+}
+
+@font-face {
+  font-family: "Roboto-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src:
+    local("Roboto"),
+    local("Roboto-Regular"),
+    url("https://g.lazcdn.com/g/lzdfe/static/0.0.29/Roboto/latin.woff2")
+      format("woff2"),
+    url("https://g.lazcdn.com/g/lzdfe/static/0.0.29/Roboto/latin-ext.woff2")
+      format("woff2");
+}
+
+@font-face {
+  font-family: "Roboto-Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src:
+    local("Roboto Medium"),
+    local("Roboto-Medium"),
+    url("https://g.lazcdn.com/g/lzdfe/static/0.0.29/Roboto-Medium/latin.woff2")
+      format("woff2");
+}
+
+@font-face {
+  font-family: "lazada";
+  src:
+    url("https://g.lazcdn.com/g/lzdfe/static/0.0.48/iconfont-hp.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://g.lazcdn.com/g/lzdfe/static/0.0.48/iconfont-hp.woff")
+      format("woff"),
+    url("https://g.lazcdn.com/g/lzdfe/static/0.0.48/iconfont-hp.ttf")
+      format("truetype");
+  font-display: swap;
+}
+
+main {
+  font-family: inherit;
+  font-weight: inherit;
+}
+
+.container-main {
+  max-width: 1188px;
+  width: auto;
+  margin: 0 auto;
+  padding: 0;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body.has-recyclerview,
+body.product-page {
+  height: 100vh;
+  overflow: hidden;
+}
+
+#recyclerview {
+  position: relative;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.section-title {
+  font-size: 22px;
+  font-weight: 400;
+  color: #424242;
+  line-height: 38px;
+  margin: 0;
+}
+
+.card-rec-wrapper {
+  width: 100%;
+}
+
+.jfy-item {
+  background: #fff;
+  margin-bottom: 20px;
+  margin-right: 10.5px;
+  min-height: 189px;
+  width: 189px;
+  display: inline-block;
+  vertical-align: top;
+  text-decoration: none;
+  color: inherit;
+}
+
+.jfy-item:nth-child(6n) {
+  margin-right: 0;
+}
+
+.jfy-item:hover {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  position: relative;
+  text-decoration: none;
+}
+
+.jfy-item:hover .card-rec-title,
+.jfy-item:hover .home-price,
+.jfy-item:hover .home-discount,
+.jfy-item:hover .card-rec-ratings-comment {
+  text-decoration: none;
+}
+
+/* Preserve strikethrough on original prices */
+.home-price-deleted,
+.jfy-item:hover .home-price-deleted {
+  text-decoration: line-through;
+}
+
+.common-img {
+  display: inline-flex;
+  height: 100%;
+  max-height: 100%;
+  max-width: 100%;
+  width: 100%;
+}
+
+.common-img img {
+  display: inline-block;
+  height: auto;
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  width: auto;
+}
+
+.img-w100p img {
+  height: 100%;
+  width: 100%;
+}
+
+.card-rec-item-desc {
+  background: #fff;
+  padding: 4px 8px 12px;
+}
+
+.card-rec-title {
+  font-size: 14px;
+  height: 36px;
+  line-height: 18px;
+  color: #000;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-clamp: 2;
+}
+
+.home-price {
+  margin-top: 4px;
+}
+
+.home-price .currency,
+.home-price .price,
+.home-price-first-line {
+  color: #f57224;
+  font-size: 18px;
+  height: 22px;
+  line-height: 22px;
+  letter-spacing: -0.56px;
+}
+
+.home-discount {
+  color: #212121;
+  font-size: 12px;
+  margin-left: 4px;
+  opacity: 0.8;
+  letter-spacing: normal;
+}
+
+.home-price.flex-column {
+  flex-direction: column;
+}
+
+.card-rec-ratings {
+  display: inline-block;
+  position: relative;
+}
+
+.card-rec-rating-layer {
+  display: inline-block;
+}
+
+.card-rec-rating-layer.top-layer {
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  z-index: 1;
+}
+
+.card-rec-rating-layer .rating {
+  font-family: lazada, sans-serif;
+  font-size: 11px;
+  height: 11px;
+  line-height: 11px;
+  display: inline-block;
+  font-style: normal;
+  color: #dadada;
+}
+
+.card-rec-rating-layer .rating::before {
+  content: "\e77e";
+}
+
+.card-rec-rating-layer.checked .rating {
+  color: #faca51;
+}
+
+.card-rec-ratings-comment {
+  color: #9e9e9e;
+  font-size: 12px;
+  display: inline-block;
+}
+
+.two-line-clamp {
+  display: flex;
+  flex-direction: column;
+  line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
