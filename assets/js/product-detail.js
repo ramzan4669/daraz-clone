@@ -7,7 +7,7 @@ import { initReviews } from "./reviews-renderer.js";
 import { initQnA } from "./qna-renderer.js";
 import { initHotKeywords, initCategoriesDropdown } from "./site-chrome.js";
 
-export function injectProductPageData(products, breadcrumbCategories) {
+export function injectProductPageData(products) {
   const productId = getCurrentProductId();
 
   let product;
@@ -18,8 +18,6 @@ export function injectProductPageData(products, breadcrumbCategories) {
   }
   if (!product) product = products[0];
   if (!product) return;
-
-  product.breadcrumbCategories = breadcrumbCategories;
 
   updateGallery(product);
   initDrift();
@@ -55,7 +53,7 @@ export function injectProductPageData(products, breadcrumbCategories) {
 function init() {
   getProductsData().then(function (d) {
     if (!d) return;
-    injectProductPageData(d.products, d.breadcrumbCategories);
+    injectProductPageData(d.products);
     initReviews(d.products);
     initQnA(d.products);
   });

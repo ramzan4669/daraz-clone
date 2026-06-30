@@ -274,33 +274,12 @@ export function renderBreadcrumb(product) {
   const breadcrumbList = document.getElementById("breadcrumb");
   if (!breadcrumbList) return;
 
-  const categories = product.breadcrumbCategory;
-  let breadcrumbData = null;
+  const path = Array.isArray(product.categoryPath) ? product.categoryPath : [];
+  const items = path.concat([product.title]);
 
-  // Try breadcrumbOverride first
-  if (product.breadcrumbOverride && Array.isArray(product.breadcrumbOverride)) {
-    breadcrumbData = product.breadcrumbOverride;
-  }
-  // Try breadcrumbCategories lookup
-  else if (product.breadcrumbCategories && categories) {
-    const catData = product.breadcrumbCategories[categories];
-    if (catData && Array.isArray(catData)) {
-      breadcrumbData = catData;
-    }
-  }
-
-  // If no breadcrumb data exists, use a minimal breadcrumb with just the product title
-  if (!breadcrumbData || !Array.isArray(breadcrumbData)) {
-    breadcrumbData = [product.title];
-  } else {
-    // Always append product title to ensure it shows in breadcrumb
-    breadcrumbData = breadcrumbData.slice(); // Create a copy to avoid mutating original
-    breadcrumbData.push(product.title);
-  }
-
-  const html = breadcrumbData
+  const html = items
     .map(function (name, index) {
-      const isLast = index === breadcrumbData.length - 1;
+      const isLast = index === items.length - 1;
       if (isLast) {
         return (
           '<li class="breadcrumb-item">' +

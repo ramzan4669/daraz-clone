@@ -6,11 +6,12 @@
    ============================================================ */
 
 /* ============================================================
-   LARGE LAPTOP / SMALL DESKTOP — max-width: 1200px
-   Keep the desktop look but make the layout fit narrower viewports
+   LARGE LAPTOP / SMALL DESKTOP — max-width: 1199.98px
+   1200px and above stays byte-for-byte the desktop layout.
+   Below 1200: keep the desktop look but make the layout fit.
    ============================================================ */
 
-@media (max-width: 1200px) {
+@media (max-width: 1199.98px) {
   /* ── Hero: hide sidebar, make swiper fill the width ── */
   .hero-sidebar {
     display: none;
@@ -54,6 +55,219 @@
     height: auto;
     aspect-ratio: 1 / 1;
   }
+
+  /* ── Header search: fluidize the fixed 688px input.
+     .head-search must grow (flex:1) to fill .head-main, otherwise the
+     input's width:100% has no resolved parent width and collapses. ── */
+  .head-search {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .head-search input[type="search"],
+  .head-search input[type="search"]:focus {
+    width: 100%;
+    min-width: 0;
+  }
+
+  /* ── PDP: the desktop 3-column (338+520+330=1188) can't fit below 1200.
+     Fluidize the fixed-width inner block, then drop to 2-column with the
+     seller sidebar stacking full-width below. ── */
+  .product-page .product-container .pdp-block {
+    width: 100%;
+    max-width: 1188px;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+  }
+
+  .product-page .product-block-gallery {
+    flex: 0 0 45%;
+    width: 45%;
+  }
+
+  .product-page .product-block-main-information-detail {
+    flex: 0 0 55%;
+    width: 55%;
+  }
+
+  .product-page .product-block-product-detail {
+    padding: 0 12px;
+  }
+
+  .product-page .product-block-delivery-seller,
+  .product-page .product-sidebar {
+    width: 100%;
+    flex: 0 0 100%;
+  }
+
+  .product-page #module_seller_info {
+    border: none;
+    border-top: 8px solid #eff0f5;
+  }
+
+  /* ── PDP gallery: fluid preview + thumbnail scroll ── */
+  .gallery-preview-panel {
+    width: 100%;
+  }
+
+  .gallery-preview-panel-content {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+  }
+
+  .gallery-preview-panel-content img {
+    width: 100%;
+    height: auto;
+  }
+
+  .item-gallery {
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  .gallery-slider {
+    max-width: 100%;
+    overflow: hidden;
+    padding: 0 12px;
+  }
+
+  /* Zoom pane hidden below desktop */
+  .zoom-pane-container,
+  .drift-zoom-pane,
+  .drift-bounding-box {
+    display: none;
+  }
+
+  .thumb-slider-outer,
+  .thumb-slider,
+  .thumb-slider-inner,
+  .thumb-slider-list {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  .thumb-slider-track {
+    display: flex;
+    gap: 6px;
+    max-width: 100%;
+    overflow-x: auto;
+  }
+
+  /* ── PDP title / buttons / SKU ── */
+  .product-page .product-info-badge-title {
+    font-size: 18px;
+    line-height: 1.4;
+  }
+
+  .product-page .product-cart-concern {
+    width: 100%;
+    display: flex;
+    gap: 8px;
+  }
+
+  .product-page .add-to-cart-buy-now-btn {
+    flex: 1;
+    width: auto;
+  }
+
+  .product-page .sku-prop-selection {
+    flex-direction: column;
+  }
+
+  .product-page .sku-prop-selection .section-title {
+    width: auto;
+    margin-bottom: 8px;
+  }
+
+  .product-page .sku-prop-selection .section-content,
+  .product-page .sku-quantity-selection .section-content {
+    width: 100%;
+  }
+
+  /* ── PDP breadcrumb: fluidize the fixed 1188px bar ── */
+  .breadcrumb-list {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 0 12px;
+    overflow-x: auto;
+  }
+
+  /* ── PDP detail / related / reviews / qna: drop fixed side margins ── */
+  .product-detail__section {
+    width: auto;
+    max-width: 100%;
+    margin: 12px 12px 46px;
+    box-sizing: border-box;
+  }
+
+  .product-detail__body {
+    padding: 0 12px 16px;
+  }
+
+  .product-detail__title {
+    padding: 0 12px;
+  }
+
+  .product-detail__table {
+    width: 100%;
+  }
+
+  .product-page .product-related,
+  .product-page .product-related.mx-auto {
+    width: auto;
+    max-width: 100%;
+    margin: 16px 12px;
+    box-sizing: border-box;
+  }
+
+  .product-info-review {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .product-page .product-info-review {
+    max-width: 100%;
+    margin: 0 0 8px;
+  }
+
+  .product-page .product-block-qna {
+    max-width: 100%;
+    margin: 12px 0 0;
+  }
+
+  /* ── Reviews rating summary: side-by-side still fits on tablet ── */
+  .product-info-review .mod-rating .left {
+    float: left;
+  }
+
+  .product-info-review .mod-rating .summary {
+    float: left;
+    width: 145px;
+    margin-right: 40px;
+  }
+
+  .product-info-review .mod-rating .detail {
+    float: left;
+  }
+
+  .product-info-filter-sort {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  /* ── Seller info ── */
+  .seller-container {
+    padding: 12px;
+  }
+
+  /* ── Load more button: fluidize the fixed 389px ── */
+  .load-more-button {
+    width: 100%;
+    max-width: 389px;
+  }
 }
 
 /* ============================================================
@@ -83,6 +297,19 @@
     overflow: hidden;
   }
 
+  /* ponytail: product-page header uses fixed 95/75px heights (product.css/header.css)
+     with .product-page specificity that beats the generic rules below; override them
+     so the wrapped logo/search/cart row can grow naturally on mobile. */
+  .product-page .head-main,
+  .product-page .product-header,
+  .product-page .head.head-compact .head-main,
+  .product-page .head.head-compact .product-header {
+    height: auto;
+    min-height: 0;
+    padding-top: 11px;
+    padding-bottom: 11px;
+  }
+
   .header-top-bar {
     min-width: 0;
   }
@@ -99,6 +326,31 @@
     padding-left: 12px;
     padding-right: 12px;
     margin: 0 auto;
+  }
+
+  /* ponytail: .head-top keeps gap:37px + height:25px + max-height:25px/overflow:hidden
+     below 992 (the 3px gap + link padding only applies ≥992), so the 6 utility links
+     get crushed/clipped on small screens. Wrap to rows with a small gap + auto height.
+     max-height:none beats the base 25px clip; the .head-top-hidden pairing below
+     fully removes it on scroll (display:none) so no blank gap is left behind. */
+  .head-top {
+    height: auto;
+    max-height: none;
+    flex-wrap: wrap;
+    gap: 3px;
+    justify-content: flex-end;
+    padding-top: 4px;
+    padding-bottom: 4px;
+  }
+
+  .head-top a {
+    padding: 0 8px;
+    white-space: nowrap;
+    line-height: 22px;
+  }
+
+  .head-top.head-top-hidden {
+    display: none;
   }
 
   .head-main {
@@ -119,9 +371,7 @@
   .head-search input[type="search"],
   .head-search input[type="search"]:focus {
     width: 100%;
-    max-width: 688px;
     min-width: 0;
-    flex: 1;
   }
 
   .logo-img {
@@ -654,6 +904,34 @@
     padding: 12px;
   }
 
+  /* PDP: collapse the 3-cell seller stats table to stacked blocks */
+  .product-seller-info-pc {
+    display: block;
+  }
+
+  .product-seller-info-pc .info-content {
+    display: block;
+    width: 100%;
+    border-left: none;
+    border-top: 1px solid #eff0f5;
+    padding: 12px 10px;
+  }
+
+  .product-seller-info-pc .info-content:first-child {
+    border-top: none;
+    padding-left: 10px;
+  }
+
+  /* PDP: tighten side margins to the edge on phones */
+  .product-detail__section {
+    margin: 12px 0 30px;
+  }
+
+  .product-page .product-related,
+  .product-page .product-related.mx-auto {
+    margin: 16px 0;
+  }
+
   /* Footer: single column */
   .footer-inner {
     flex-direction: column;
@@ -700,6 +978,38 @@
   .breadcrumb-list {
     height: auto;
     padding: 8px 12px;
+  }
+
+  /* ── Auth modal: fluidize the fixed 444×445px container + 396/372px forms ── */
+  .modal-container {
+    width: calc(100% - 32px);
+    max-width: 444px;
+    height: auto;
+    max-height: 100vh;
+    overflow-y: auto;
+    box-sizing: border-box;
+  }
+
+  .login-input,
+  .login-btn {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .login-phone-row,
+  .signup-phone-wrapper,
+  .signup-terms,
+  .login-whatsapp-btn,
+  .signup-whatsapp-btn {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .login-phone-input,
+  .signup-phone-input {
+    flex: 1;
+    width: auto;
+    min-width: 0;
   }
 }
 

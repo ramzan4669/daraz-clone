@@ -6,181 +6,16 @@
     "bags for girls",
     "airpods"
   ],
-  "breadcrumbCategories": {
-    "mobile-phones": [
-      "Electronics",
-      "Mobile Phones",
-      "Smartphones"
-    ],
-    "diapers": [
-      "Mother & Baby",
-      "Diapers",
-      "Pampers"
-    ],
-    "fragrances": [
-      "Health & Beauty",
-      "Fragrances",
-      "Unisex"
-    ],
-    "mosquito-repellent": [
-      "Home & Garden",
-      "Pest Control",
-      "Mosquito Repellent"
-    ],
-    "makeup": [
-      "Beauty & Personal Care",
-      "Makeup",
-      "Face Makeup"
-    ],
-    "makeup-tools": [
-      "Beauty & Personal Care",
-      "Makeup",
-      "Brushes & Tools"
-    ],
-    "skincare": [
-      "Beauty & Personal Care",
-      "Skincare",
-      "Face Care"
-    ],
-    "hair-care": [
-      "Beauty & Personal Care",
-      "Hair Care",
-      "Hair Treatment"
-    ],
-    "lipstick": [
-      "Beauty & Personal Care",
-      "Makeup",
-      "Lip Makeup"
-    ],
-    "nails": [
-      "Beauty & Personal Care",
-      "Nail Care",
-      "Artificial Nails"
-    ],
-    "headphones": [
-      "Electronics",
-      "Audio",
-      "Headphones"
-    ],
-    "phone-accessories": [
-      "Electronics",
-      "Phone Accessories",
-      "Cases"
-    ],
-    "phone-holder": [
-      "Electronics",
-      "Phone Accessories",
-      "Holders"
-    ],
-    "airpods-accessories": [
-      "Electronics",
-      "Audio",
-      "Airpods Accessories"
-    ],
-    "mens-fashion": [
-      "Fashion",
-      "Men's Clothing",
-      "T-Shirts"
-    ],
-    "womens-fashion": [
-      "Fashion",
-      "Women's Clothing",
-      "Dresses"
-    ],
-    "underwear": [
-      "Fashion",
-      "Underwear",
-      "Panties"
-    ],
-    "trousers": [
-      "Fashion",
-      "Men's Clothing",
-      "Trousers"
-    ],
-    "shoes": [
-      "Fashion",
-      "Shoes",
-      "Sandals"
-    ],
-    "bags-backpacks": [
-      "Fashion",
-      "Bags & Backpacks",
-      "Backpacks"
-    ],
-    "hair-removal": [
-      "Beauty & Personal Care",
-      "Hair Removal",
-      "Electric Hair Removal"
-    ],
-    "trimmer": [
-      "Beauty & Personal Care",
-      "Grooming",
-      "Trimmers"
-    ],
-    "flashlight": [
-      "Home & Garden",
-      "Tools",
-      "Flashlights"
-    ],
-    "toys": [
-      "Toys & Games",
-      "Educational Toys"
-    ],
-    "video-games": [
-      "Toys & Games",
-      "Video Games",
-      "Gaming Accessories"
-    ],
-    "storage-organization": [
-      "Home & Garden",
-      "Storage",
-      "Closet Organizers"
-    ],
-    "kitchenware": [
-      "Home & Garden",
-      "Kitchenware",
-      "Choppers"
-    ],
-    "home-appliances": [
-      "Home & Garden",
-      "Small Appliances",
-      "Fans"
-    ],
-    "sewing": [
-      "Home & Garden",
-      "Craft Supplies",
-      "Sewing Tools"
-    ],
-    "wallets": [
-      "Fashion",
-      "Wallets",
-      "Card Holders"
-    ],
-    "perfume": [
-      "Beauty & Personal Care",
-      "Fragrances",
-      "Men's Fragrance"
-    ],
-    "morning-sweets": [
-      "Groceries",
-      "Sweets",
-      "Halwa"
-    ],
-    "dental-care": [
-      "Beauty & Personal Care",
-      "Dental Care",
-      "Toothpaste"
-    ],
-    "water-pump": [
-      "Home & Garden",
-      "Kitchenware",
-      "Water Pumps"
-    ]
-  },
   "products": [
     {
       "id": 1,
       "title": "Pampers Pants Baby Diapers (Size 5 Junior, 44 Pcs)",
+      "categoryPath": [
+        "Home",
+        "Mother & Baby",
+        "Diapers",
+        "Pampers"
+      ],
       "price": "2697",
       "originalPrice": "2800",
       "discount": "4%",
@@ -657,7 +492,6 @@
       "inStock": true,
       "isMall": true,
       "isFlagship": true,
-      "breadcrumbCategory": "diapers",
       "storageLabel": "Diaper Pack Size",
       "storageOptions": [
         "44"
@@ -711,6 +545,12 @@
     {
       "id": 2,
       "title": "Mubarka Bakhoor 12 Sticks Free Burner",
+      "categoryPath": [
+        "Home",
+        "Health & Beauty",
+        "Fragrances",
+        "Unisex"
+      ],
       "price": "260",
       "originalPrice": "600",
       "discount": "57%",
@@ -735,7 +575,6 @@
       "description": "Introducing the Mubarka Bakhoor 12 Sticks Free Burner by SAC, the perfect addition to your household. This air freshener is designed to provide a long-lasting fragrance that will leave your home smelling fresh and inviting. The burner comes with 12 sticks, ensuring that you have enough to last for a while. The Mubarka Bakhoor fragrance is perfect for those who love a sweet and spicy scent. It is easy to use and will quickly fill your home with a delightful aroma. This air freshener is perfect for use in any room of your home, including the living room, bedroom, and bathroom. Get your hands on the Mubarka Bakhoor 12 Sticks Free Burner today and enjoy a fresh and inviting home.",
       "freeShipping": false,
       "inStock": true,
-      "breadcrumbCategory": "fragrances",
       "reviews": {
         "summary": {
           "averageRating": 4.6,
@@ -1189,6 +1028,12 @@
     {
       "id": 3,
       "title": "Kingtox Mosquito Repellent Coil Green",
+      "categoryPath": [
+        "Home",
+        "Home & Garden",
+        "Pest Control",
+        "Mosquito Repellent"
+      ],
       "price": "85",
       "originalPrice": "108",
       "discount": "21%",
@@ -1217,7 +1062,6 @@
       "description": "Kingtox Mosquito Repellent Coil offers reliable defense against Dengue and Malaria-carrying mosquitoes. Whether indoors or outdoors, it provides around-the-clock protection for up to 10 hours, thanks to its potent and efficient mosquito repellent formula.",
       "freeShipping": false,
       "inStock": true,
-      "breadcrumbCategory": "mosquito-repellent",
       "reviews": {
         "summary": {
           "averageRating": 4.9,
@@ -1698,6 +1542,12 @@
     {
       "id": 4,
       "title": "Mortein Mosquito Repellent Refill Odourless 180 Nights",
+      "categoryPath": [
+        "Home",
+        "Home & Garden",
+        "Pest Control",
+        "Mosquito Repellent"
+      ],
       "price": "1050",
       "originalPrice": "1350",
       "discount": "22%",
@@ -1718,7 +1568,6 @@
       "description": "Product DescriptionClaims:1. 100% protection.2. 100% dengue protection.3. Protection and peace of mind for 8 hours.4. Safe for your family.How to Use:Remove the plastic cap of the liquid refill bottle. Screw the liquid refill bottle onto the heater by rotating in a clockwise direction. Plug the cordless gadget (220 V) directly into a socket. Only use gadget in an upright position. Where to Use: For indoor use only. Use only in the vertical position. Ingredients: Transfluthrin 0.08%",
       "freeShipping": true,
       "inStock": true,
-      "breadcrumbCategory": "mosquito-repellent",
       "reviews": {
         "summary": {
           "averageRating": 4.7,
@@ -2201,6 +2050,12 @@
     {
       "id": 5,
       "title": "10pcs Nose Blackhead Remover Strips Mask Skin Care Shrink Pore Acne Treatment Mask Deep Nose Pore Cleansing Strips Black Head Remover",
+      "categoryPath": [
+        "Home",
+        "Beauty & Personal Care",
+        "Makeup",
+        "Face Makeup"
+      ],
       "price": "174",
       "originalPrice": "600",
       "discount": "71%",
@@ -2229,7 +2084,6 @@
       "description": "How to use1. After cleansing, wet the nose thoroughly with clean water, remove the transparent film of the nasal paste, and press the smooth surface of the nasal paste along the bridge of the nose to the two sides of the nasal ala to remove air.2. Wait until the nasal patch becomes completely dry and hard (do not feel the nasal patch while waiting). Remove the nasal patch from both sides of the alar to the bridge of the nose, and quickly remove it from the bottom up..",
       "freeShipping": true,
       "inStock": true,
-      "breadcrumbCategory": "makeup",
       "reviews": {
         "summary": {
           "averageRating": 4.3,
@@ -2843,6 +2697,12 @@
     {
       "id": 6,
       "title": "13 PCS Makeup Brush Set Soft, Eyeshadow Contour, Concealer, Eyeliner, Brush, Foundation Beauty Cosmetic Brushes Tools",
+      "categoryPath": [
+        "Home",
+        "Beauty & Personal Care",
+        "Makeup",
+        "Brushes & Tools"
+      ],
       "price": "298",
       "originalPrice": "549",
       "discount": "46%",
@@ -2871,7 +2731,6 @@
       "description": "This set includes 13 unique brushes to help create an array of different looks.Different shapes and sizes of the bristles allow you to create a variety of looks while providing perfectly polished makeup styles.Each brush is crafted meticulously starting with the wooden handle and aluminum alloy ferrule.Roll-up carrying case with magnetic press-stud closure stores and protects brushes with ease.The most organized and elegant way to carry your make-up and cosmetics.Washable with No Dye Run.Intended for makeup enthusiasts, the creative possibilities are endless.Specifications:Material: Nylon hair + aluminum alloy + plasticQuantity: 13 pcsSize of brushes: Around 17 cm/ 6.2inTotal weight: Around 100g",
       "freeShipping": true,
       "inStock": true,
-      "breadcrumbCategory": "makeup-tools",
       "reviews": {
         "summary": {
           "averageRating": 4.8,
@@ -3366,6 +3225,12 @@
     {
       "id": 7,
       "title": "Orignal TWS i7s  i12 ,pro Airpods with Super Sound & High Quality Touch Sensors True Stereo Headphones with Built in Mic 10m Transmission Bluetooth Wireless Earbuds , Case Sport Headset for all Bluetooth Smart devices.-Color Family white",
+      "categoryPath": [
+        "Home",
+        "Electronics",
+        "Audio",
+        "Headphones"
+      ],
       "price": "681",
       "originalPrice": "2000",
       "discount": "66%",
@@ -3399,7 +3264,6 @@
       "isFlagship": true,
       "videoUrl": "https://img.drz.lazcdn.com/g/kf/S543398463239432783766cb65f317c25x.png_720x720q80.png_.webp",
       "videoThumbnail": "https://img.drz.lazcdn.com/static/pk/p/7b2dfcd90c971b9dc5f602b3adbb2509.jpg_120x120q80.jpg_.webp",
-      "breadcrumbCategory": "headphones",
       "reviews": {
         "summary": {
           "averageRating": 4.7,
@@ -3938,6 +3802,12 @@
     {
       "id": 8,
       "title": "Colorful Flower Beaded Mobile Phone Charm Strap Chain Lanyard Women Girl Jewelry Phone Holder Beads Pendant Cherry - Mobile Charm",
+      "categoryPath": [
+        "Home",
+        "Electronics",
+        "Phone Accessories",
+        "Cases"
+      ],
       "price": "299",
       "originalPrice": "599",
       "discount": "50%",
@@ -3967,7 +3837,6 @@
       "description": "",
       "freeShipping": true,
       "inStock": true,
-      "breadcrumbCategory": "phone-accessories",
       "reviews": {
         "summary": {
           "averageRating": 4.8,
@@ -4446,6 +4315,12 @@
     {
       "id": 9,
       "title": "Silicon Suction Pad Phone Holder Self-Adhesive Rubber Suction Mobile Holder Silicone Suction Phone Case - Suction Cup Phone Holder | Sticky Phone Grip Mount With 24 Suction Cups | Anti-Slip Suction Phone Case Mount For Shower mirror Silicone Mobile Stand",
+      "categoryPath": [
+        "Home",
+        "Electronics",
+        "Phone Accessories",
+        "Holders"
+      ],
       "price": "117",
       "originalPrice": "325",
       "discount": "64%",
@@ -4474,7 +4349,6 @@
       "description": "A revolution in content creation: 24 suction cups grip mirrors, windows, and any smooth surface for steady, hands-free video and selfies with your iPhone, Samsung Galaxy, HTC, Note, and moreUnmatched durability: Built to withstand your adventurous, on-the-go lifestyle, it provides a secure hold so you can spend less time worrying about it falling off and more time capturing great shotsTo use OCTOBUDDY, make sure the mounting surface is flat and clean. It's a big plus if the pad is also clean. Check the pad for damage. Press all sides of the screen so that the suction cups adhere completely. Make sure it's securely in place before releasing. Do not leave the phone unattended for long periods of time.Expand your creative potential: Designed for social media enthusiasts and influencers, this mount helps you capture epic, professional-quality video and photos for TikTok, Instagram, and moreVersatile and practical: Available in three sizes, this essential tool for anyone looking to up their content game is your ideal companion for travel, home, gym, or any content creation scenario",
       "freeShipping": true,
       "inStock": true,
-      "breadcrumbCategory": "phone-holder",
       "reviews": {
         "summary": {
           "averageRating": 4.8,
@@ -5067,6 +4941,12 @@
     {
       "id": 10,
       "title": "Airpods_pro protective Silicon case/cover - 360 protection for your airpods_pro Anti Fall Protective Cover With Hook ( Case Only )",
+      "categoryPath": [
+        "Home",
+        "Electronics",
+        "Audio",
+        "Airpods Accessories"
+      ],
       "price": "201",
       "originalPrice": "219",
       "discount": "8%",
@@ -5094,7 +4974,6 @@
       "description": "[Designed for AirPods Pro] Only for Apple AirPods Pro (2019), not compatible with AirPods 1st and AirPods 2st.[Premium Skin-Friendly Material] Made of premium grade silicone, which is different from other materials, not easy to age and break, the protection will be better and it will last longer.[Thickened Silicone Layer] 3.0mm thickness, thicker and stronger than other silicone protective cases, 360-degree full protection body to prevent scratch and fall protection.[Shock-Absorbing and Drop Protection] Applying the latest technology, the appearance of silicone is extremely silky and soft, and it feels great in your hands. The silicone protective case fits snugly on the AirPods Pro and is not easy to drop.[Compatible with Wireless Charging] There is no need to remove the silicone case, and the indicator light can be seen when wireless charging.Compatible For yourAirPods_PROKeep your AirPods_PRO Safe in any SituationProtect your AIRPODS_PRO from scratches & damageSlim & Combo Design w ith Detachable Belt ClipInspired by Braille Lining Structure for Visualy Blind IndividualsAccurate Charging Port PositionPremium Key Ring & ClaspPrecision Molded for Perfect FitPlease Note: AirPods_Pro not included",
       "freeShipping": false,
       "inStock": true,
-      "breadcrumbCategory": "airpods-accessories",
       "reviews": {
         "summary": {
           "averageRating": 4.6,
@@ -5632,6 +5511,12 @@
     {
       "id": 11,
       "title": "New trendy fired printed black & white premium quality tracksuit for men and boys / Tracksuit for men & boys with shorts or tracksuit for men & boys with trousers - Half Sleeves / Full Sleeves",
+      "categoryPath": [
+        "Home",
+        "Fashion",
+        "Men's Clothing",
+        "Trousers"
+      ],
       "price": "949",
       "originalPrice": "1500",
       "discount": "37%",
@@ -5661,7 +5546,6 @@
       "description": "New trendy fired printed black & white premium quality tracksuit for men and boys / Tracksuit for men & boys with shorts or tracksuit for men & boys with trousersSize: Small Medium Large X-LargeSmall Length 25 Chest 19Medium Length 26 Chest 20Large Length 27 Chest 21XLarge Length 29 Chest 22High QualityGood FabricTracksuit for menTrack suit for menTracksuit for boysPremium QualitySoft & ComfortableStylish & TrendyMachine WashWashable and DurableWash Always With Sweet WaterDry Not In SunlightHands Wash - Machine WashSuper Soft FabricRegular FitVery Soft and Comfortable Fabric",
       "freeShipping": true,
       "inStock": true,
-      "breadcrumbCategory": "trousers",
       "reviews": {
         "summary": {
           "averageRating": 4.5,
@@ -6278,6 +6162,12 @@
     {
       "id": 12,
       "title": "Impression Premium Long Lasting Perfume for Men – 35ml | Strong Impression Fragrance with High Projection & All-Day Performance | Signature Fresh & Masculine Scent for Office, Daily Wear, Parties & Special Events | Concentrated Pocket-Size Perfume",
+      "categoryPath": [
+        "Home",
+        "Health & Beauty",
+        "Fragrances",
+        "Unisex"
+      ],
       "price": "322",
       "originalPrice": "1000",
       "discount": "68%",
@@ -6304,7 +6194,6 @@
       "description": "Step into the world of timeless luxury and aromatic elegance with this Gold Edition Premium Perfume Gift Set, a masterfully curated collection of nine signature fragrances. Designed for individuals who appreciate diversity in scent and sophistication in style, this exquisite set brings together nine distinct perfumes, each representing a unique personality, emotion, and aura.The collection includes each carefully blended using high-quality ingredients for long-lasting freshness and unmatched projection. Whether you prefer something bold and confident or subtle and calming, this set offers the perfect fragrance for every moment of your life.Every perfume in this Gold Edition series combines the richness of oriental notes with the vibrancy of modern freshness. From the deep, mysterious warmth of Khumar to the clean and soothing elegance of White Musk, each bottle captures the essence of luxury and individuality.This elegant collection is ideal for both men and women. Its stylish, metallic-finish boxes and premium-quality presentation make it perfect for personal use or as a thoughtful gift. Compact, portable, and long-lasting, each 12ml bottle fits effortlessly into your travel kit, purse, or pocket, so your favorite scent is always with you.Whether it’s for work, a formal dinner, a festive celebration, or daily wear, this perfume set ensures you smell irresistible wherever you go. It’s not just a fragrance collection — it’s an expression of grace, confidence, and personality.",
       "freeShipping": true,
       "inStock": true,
-      "breadcrumbCategory": "fragrances",
       "reviews": {
         "summary": {
           "averageRating": 4.7,
@@ -6783,6 +6672,12 @@
     {
       "id": 13,
       "title": "Beautious 18 colors Nude Eyeshadow palette",
+      "categoryPath": [
+        "Home",
+        "Beauty & Personal Care",
+        "Makeup",
+        "Face Makeup"
+      ],
       "price": "415",
       "originalPrice": "799",
       "discount": "48%",
@@ -6811,7 +6706,6 @@
       "description": "10 highly-pigmented matte eyeshadows, formulated with aloe vera and coconut oil for butter-like application.4 reflective shades feature shimmering pearl flecks for a gorgeous, duo-chromatic finish.2 glitter formulas are infused with innovative silicones for advanced adherence, pigment dispersion, and luminosity.1 pressed pearl shade combines acacia, jojoba, and sunflower wax for a high-shimmer finish that layers effortlessly on top of mattes, adding dreamy depth and dimension.1 concealer base shade allows for flawless application, and boosts eyeshadow's pigment intensity.",
       "freeShipping": true,
       "inStock": true,
-      "breadcrumbCategory": "makeup",
       "reviews": {
         "summary": {
           "averageRating": 4.7,
@@ -7311,6 +7205,12 @@
     {
       "id": 14,
       "title": "5 IN 1 Mobile Game Combo Pack /Gaming Converter/Wired Gaming Keypad Ergonomic One-headed PUBG / shooting games with wire (Only for Android User)",
+      "categoryPath": [
+        "Home",
+        "Toys & Games",
+        "Video Games",
+        "Gaming Accessories"
+      ],
       "price": "4100",
       "originalPrice": "4699",
       "discount": "13%",
@@ -7340,7 +7240,6 @@
       "description": "Take your mobile gaming to the next level with the M1 Pro+ 5 in 1 Mobile Game Combo Pack, specially designed for Android gamers. This all-in-one gaming kit includes everything you need for smooth and professional gameplay — a wireless keyboard, ergonomic gaming mouse, high-response mouse pad, mobile holder, and a smart connection hub.With wireless connection technology, you can enjoy lag-free performance, while the recoil control feature ensures improved shooting accuracy in FPS games like PUBG, Free Fire, and Call of Duty Mobile. The RGB backlit one-hand keyboard provides a comfortable layout with fast response keys, and the gaming mouse gives you precise movement control.Whether you’re a casual player or a competitive mobile gamer, the M1 Pro+ Mobile Game Combo Pack is your perfect choice for better control, faster reaction time, and ultimate gaming comfort.",
       "freeShipping": true,
       "inStock": true,
-      "breadcrumbCategory": "video-games",
       "reviews": {
         "summary": {
           "averageRating": 4.6,
@@ -7788,6 +7687,12 @@
     {
       "id": 15,
       "title": "Matte Color Lipstick Pencil 12 Pcs",
+      "categoryPath": [
+        "Home",
+        "Beauty & Personal Care",
+        "Makeup",
+        "Lip Makeup"
+      ],
       "price": "225",
       "originalPrice": "399",
       "discount": "44%",
@@ -7815,7 +7720,6 @@
       "description": "12 Different ColorsMatte colorsExcellent PigmentSmooth ApplicationVibrant Colors",
       "freeShipping": true,
       "inStock": true,
-      "breadcrumbCategory": "lipstick",
       "reviews": {
         "summary": {
           "averageRating": 4.7,
@@ -8274,6 +8178,12 @@
     {
       "id": 16,
       "title": "576 Pcs Box Colorful Artifical Nails Acrylic Full Cover Nail | Fake Nails | Fancy Artifical Nails | French nails | Nails For girls In Multicolours",
+      "categoryPath": [
+        "Home",
+        "Beauty & Personal Care",
+        "Nail Care",
+        "Artificial Nails"
+      ],
       "price": "87",
       "originalPrice": "299",
       "discount": "71%",
@@ -8302,7 +8212,6 @@
       "description": "576 Pcs Nails with Box288 PCS Nails with BoxA comprehensive set offering a vast array of options.Reusable Nails:Durable and designed for multiple uses.24 Different Colors In 576 PCs12 Colors In 288 PCsA wide range of colors to match any outfit or occasion.Beautiful Fake NailsHigh-quality, salon-style nails that enhance your look.Easy Application and Removal576 Pcs Box Colorful Fake Nails Acrylic Full Cover Nail | Fake Nails | Fancy Artifical Nails In Multicolours",
       "freeShipping": false,
       "inStock": true,
-      "breadcrumbCategory": "nails",
       "reviews": {
         "summary": {
           "averageRating": 4.6,
@@ -8770,6 +8679,12 @@
     {
       "id": 17,
       "title": "TRACKSUIT - New Trendy Black & White Fire Printed Tracksuit For Men- T-shirt & Trouser Printed Tracksuit",
+      "categoryPath": [
+        "Home",
+        "Fashion",
+        "Men's Clothing",
+        "Trousers"
+      ],
       "price": "777",
       "originalPrice": "849",
       "discount": "8%",
@@ -8797,7 +8712,6 @@
       "description": "Size: Small Medium Large X-LargeSmall Length 25 Chest 18Medium Length 26 Chest 19Large Length 27 Chest 19XLarge Length 29 Chest 21High QualityGood FabricTracksuit for menTrack suit for menTracksuit for boysTracksuits for menPremium QualitySoft & ComfortableStylish & TrendyMachine WashWashable and DurableWash Always With Sweet WaterDry Not In SunlightHands Wash - Machine WashSuper Soft FabricRegular FitVery Soft and Comfortable Fabric",
       "freeShipping": true,
       "inStock": true,
-      "breadcrumbCategory": "trousers",
       "reviews": {
         "summary": {
           "averageRating": 4.7,
@@ -9279,6 +9193,12 @@
     {
       "id": 18,
       "title": "6 pcs Nude Red Matte Lipgloss Liquid Lipstick Set of 6 Shades Matte Nude Colors Lip Sticks",
+      "categoryPath": [
+        "Home",
+        "Beauty & Personal Care",
+        "Makeup",
+        "Lip Makeup"
+      ],
       "price": "699",
       "originalPrice": "1200",
       "discount": "42%",
@@ -9308,7 +9228,6 @@
       "description": "This Lipgloss Lipstick Set includes 6 shades of matte nude colors that will give your lips a beautiful and natural look. The texture of these lipsticks is matte, which means they will stay on your lips for a long time without smudging or fading. These lipsticks are perfect for any occasion, whether it's a casual day out or a special event. The set includes a variety of shades that will complement any skin tone. The product is categorized under Health & Beauty>Makeup>Lips>Liquid Lipsticks.",
       "freeShipping": false,
       "inStock": true,
-      "breadcrumbCategory": "lipstick",
       "reviews": {
         "summary": {
           "averageRating": 4.9,
@@ -9784,6 +9703,12 @@
     {
       "id": 19,
       "title": "10 colors Pure Korean TOP Quality School BAG for  School University college Laptop Backpack Sleek for Travel, Business Casual or College, boys and girls also boy girl",
+      "categoryPath": [
+        "Home",
+        "Fashion",
+        "Bags & Backpacks",
+        "Backpacks"
+      ],
       "price": "764",
       "originalPrice": "5000",
       "discount": "85%",
@@ -9807,7 +9732,6 @@
       "description": "100% Pure Original Laptop Bag• Durable and Water-Repellent Fabric, Lightweight Toploader• Ideal for Travel, Laptop Backpacks• Best choice for protecting your laptop on the go",
       "freeShipping": true,
       "inStock": true,
-      "breadcrumbCategory": "bags-backpacks",
       "reviews": {
         "summary": {
           "averageRating": 4.9,
@@ -10389,6 +10313,12 @@
     {
       "id": 20,
       "title": "Mini Fan Rechargeable / Hand Fan Handheld Desktop USB Fan Electric Portable Mini Desk Fan for Kids - Rechargeable USB Battery - Handheld Fan with Adjustable Speed",
+      "categoryPath": [
+        "Home",
+        "Home & Garden",
+        "Small Appliances",
+        "Fans"
+      ],
       "price": "399",
       "originalPrice": "799",
       "discount": "50%",
@@ -10418,7 +10348,6 @@
       "description": "Stay cool anywhere with this compact and portable mini handheld fan. Powered by USB or battery, it's perfect for travel, outdoor work, or everyday use. Enjoy silent operation and lasting performance with a 300mAh polymer battery. Ideal for use in homes, cars, hotels, or outdoor events—your reliable, quiet, and versatile cooling companion.",
       "freeShipping": true,
       "inStock": true,
-      "breadcrumbCategory": "home-appliances",
       "reviews": {
         "summary": {
           "averageRating": 4.6,
@@ -10976,6 +10905,12 @@
     {
       "id": 21,
       "title": "Underwear for Men: Low Budget Quality Stuff - Random Color - Affordable and Comfortable Men's Underwear",
+      "categoryPath": [
+        "Home",
+        "Fashion",
+        "Underwear",
+        "Panties"
+      ],
       "price": "99",
       "originalPrice": "299",
       "discount": "67%",
@@ -11004,7 +10939,6 @@
       "description": "\"Fabric:Made from soft and breathable cotton fabric, designed for everyday comfort. The material is lightweight, skin-friendly, and helps keep you cool and dry throughout the day.Style:Simple and basic everyday underwear design, focused on comfort and practicality for daily use at an affordable price.Color:Available in random multicolor assortment, depending on stock availability. Each piece may come in different colors.Fit:Designed with a comfortable regular fit, suitable for all body types. Ensures ease of movement and all-day wearing comfort.Design Elements:Soft cotton breathable materialMinimal and functional designLightweight everyday wearElastic waistband for secure fitRandom color selectionSuitable for daily useAffordable low-budget quality rangeCare Information:Easy to wash (machine or hand wash)Use mild detergentDo not bleachDry in shadeWash with similar colorsQuick drying and low maintenance\"",
       "freeShipping": true,
       "inStock": true,
-      "breadcrumbCategory": "underwear",
       "reviews": {
         "summary": {
           "averageRating": 4.3,
@@ -11484,6 +11418,11 @@
     {
       "id": 22,
       "title": "Bubble toy for Kids - Bubble Machine with Water & Liquid Solution, Fun bubble Toy for Boys, Kids Bubble Blaster Machine, Best Outdoor Kids Toy for Boys & Girls3",
+      "categoryPath": [
+        "Home",
+        "Toys & Games",
+        "Educational Toys"
+      ],
       "price": "418",
       "originalPrice": "420",
       "discount": "0%",
@@ -11513,7 +11452,6 @@
       "description": "urn every moment into fun with this 36-Hole Bubble Gun for Kids 🫧✨. Perfect for outdoor play, parties, and family gatherings, this exciting bubble toy creates a magical stream of bubbles that kids absolutely love.With its powerful 36-hole design, the bubble gun produces hundreds of bubbles in seconds, making playtime more exciting and enjoyable. The electric operation makes it super easy to use—just press the button and watch endless bubbles fill the air 🎉.Designed for comfort and convenience, this lightweight and handheld bubble gun is easy for kids to carry and use anywhere—whether in the park, garden, or at events.Made with safe and child-friendly materials, it is suitable for kids aged 3 and above, giving parents peace of mind while children enjoy non-stop fun.The package also includes extra bubble liquid, so kids can play longer without interruption. Its stylish and fun design adds an extra touch of excitement, making it a perfect gift choice 🎁.⭐ Key Features:✔ 36-hole design for maximum bubble output✔ Electric bubble gun for easy use✔ Lightweight & portable for outdoor fun✔ Safe materials for kids (3+ age)✔ Includes extra bubble liquid✔ Perfect for parties, weddings & daily play✔ Durable and long-lasting build​",
       "freeShipping": false,
       "inStock": true,
-      "breadcrumbCategory": "toys",
       "reviews": {
         "summary": {
           "averageRating": 4.8,
@@ -11933,6 +11871,12 @@
     {
       "id": 23,
       "title": "Keratin Hair Mask Keratin Hair Treatment Straighten Hair For Hair 500 ML",
+      "categoryPath": [
+        "Home",
+        "Beauty & Personal Care",
+        "Skincare",
+        "Face Care"
+      ],
       "price": "394",
       "originalPrice": "1499",
       "discount": "74%",
@@ -11959,7 +11903,6 @@
       "description": "Keratin Hair Mask Keratin Hair Treatment keratin Straighten Hair For Hair 500 ML by Laameha",
       "freeShipping": false,
       "inStock": true,
-      "breadcrumbCategory": "skincare",
       "reviews": {
         "summary": {
           "averageRating": 4.7,
@@ -12421,6 +12364,12 @@
     {
       "id": 24,
       "title": "girl fancy slipper women slipper stylish brand steplia",
+      "categoryPath": [
+        "Home",
+        "Fashion",
+        "Shoes",
+        "Sandals"
+      ],
       "price": "949",
       "originalPrice": "1500",
       "discount": "37%",
@@ -12441,7 +12390,6 @@
       "description": "",
       "freeShipping": false,
       "inStock": true,
-      "breadcrumbCategory": "shoes",
       "reviews": {
         "summary": {
           "averageRating": 4.9,
@@ -12829,6 +12777,12 @@
     {
       "id": 25,
       "title": "3Pcs Large Foldable Clothes Storage Zipper Bag",
+      "categoryPath": [
+        "Home",
+        "Home & Garden",
+        "Storage",
+        "Closet Organizers"
+      ],
       "price": "299",
       "originalPrice": "471",
       "discount": "37%",
@@ -12852,7 +12806,6 @@
       "description": "Non-woven fabric, more durable for household useCan be folded to save space when not use itLarge capacity, best solution to house your clothes for season changeHigh grade natural bamboo carbon material,lightweight.Perfect for protecting from moths, damp, mildew and dust.Size:45*30* 50cm, foldable. Keep your clothes and accessories tidy and organized.",
       "freeShipping": false,
       "inStock": true,
-      "breadcrumbCategory": "storage-organization",
       "reviews": {
         "summary": {
           "averageRating": 4.6,
@@ -13310,6 +13263,12 @@
     {
       "id": 26,
       "title": "Water Bottles, Glass/Plastic 400 ML Water bottles, Sports water bottles Double walled Keeps Easy to carry for Walking Hiking, school water bottle, Multicolor (1 Piece) coffee mug",
+      "categoryPath": [
+        "Home",
+        "Home & Garden",
+        "Kitchenware",
+        "Choppers"
+      ],
       "price": "279",
       "originalPrice": "599",
       "discount": "53%",
@@ -13339,7 +13298,6 @@
       "description": "Water Bottles, Glass/Plastic 400 ML Water bottles, Sports water bottles Double walled Keeps Easy to carry for Walking Hiking, school water bottle, Multicolor (1 Piece)",
       "freeShipping": true,
       "inStock": true,
-      "breadcrumbCategory": "kitchenware",
       "reviews": {
         "summary": {
           "averageRating": 4.5,
@@ -13866,6 +13824,12 @@
     {
       "id": 27,
       "title": "NEW  TRENDY PRINTED TRACKSUIT FOR MEN ROUND NECK HALF SLEEVES T SHIRT & TROUSER FOR MEN & BOY'S BEST ARTICLE OF SUMMER COLLECTION/TRACKSUIT FOR MEN/SUMMER TRACKSUIT FOR MEN & BOY'S",
+      "categoryPath": [
+        "Home",
+        "Fashion",
+        "Men's Clothing",
+        "Trousers"
+      ],
       "price": "849",
       "originalPrice": "2599",
       "discount": "67%",
@@ -13895,7 +13859,6 @@
       "description": "Size: Small Medium Large X-LargeSmall: Length 25 Chest 18Medium: Length 26 Chest 19Large: Length 27 Chest 20XLarge: Length 29 Chest 22High QualityGood Fabrictracksuit for menTrouser For MenTshirt For MenTerry TrouserPremium QualityMost ComfortableStylish & TrendyDouble StitchedMachine WashStylish and Comfortabletrack suit for menWashable and DurableWash Always With Sweet WaterDry Not In SunlightHands Wash - Machine WashSuper Soft FabricLight WeightRegular FitGym Shirts For MenGym Suit For MensVery Soft and Comfortable Fabric",
       "freeShipping": true,
       "inStock": true,
-      "breadcrumbCategory": "trousers",
       "reviews": {
         "summary": {
           "averageRating": 5,
@@ -14023,6 +13986,12 @@
     {
       "id": 28,
       "title": "Travel Toiletries & Cosmetic Organizer Bag – Large Capacity Zipper Pouch | Multipurpose Makeup & Travel Bag for Women",
+      "categoryPath": [
+        "Home",
+        "Fashion",
+        "Bags & Backpacks",
+        "Backpacks"
+      ],
       "price": "691",
       "originalPrice": "1500",
       "discount": "54%",
@@ -14052,7 +14021,6 @@
       "description": "Wash Bag Toiletries and Cosmetic Organizer Bags with Full of Storage | Make Up Bags Pouch with Zipper For Travelling | Multipurpose Traveling Cosmetic Bags for WomenThe durable and lightweight one pocket design makes it easy to pack makeup, toiletries, hair straighteners, and more into a suitcase and easily find what you packed. The bag works as a small packing cube, a large toiletry bag, or a clear bathroom travel bag.MULTIPLE USES: This cosmetic bags are suitable for different occasions: Beauty, Home, Office, School, Travel, Gym, Camping, Shower.The makeup bag is made of waterproof and soft PU and PVC with supple touch, effective in stain resistance, and can be used for a long time.A beautiful selection of colors and sizes. Guaranteed to be a novel gift for a wide range of occasions including friends, family, men, women, bridesmaids, birthdays, holidays and more.",
       "freeShipping": false,
       "inStock": true,
-      "breadcrumbCategory": "bags-backpacks",
       "reviews": {
         "summary": {
           "averageRating": 4.9,
@@ -14559,6 +14527,12 @@
     {
       "id": 29,
       "title": "16 in 1 Multi-functional vegetable chopper slicer shredder with Basket Cheese Slicer Food Chopper , Veggie Chopper , Onion Chopper , salad chopper Mandoline slicer & Cheese Grater , 16 in 1 Vegetable Chopper with Container",
+      "categoryPath": [
+        "Home",
+        "Home & Garden",
+        "Kitchenware",
+        "Choppers"
+      ],
       "price": "1817",
       "originalPrice": "1899",
       "discount": "4%",
@@ -14586,7 +14560,6 @@
       "description": "16 in 1 Multi-functional vegetable chopper slicer shredder with Basket Cheese Slicer Food Chopper , Veggie Chopper , Onion Chopper , salad chopper Mandoline slicer & Cheese Grater , 16 in 1 Vegetable Chopper with Container",
       "freeShipping": false,
       "inStock": true,
-      "breadcrumbCategory": "kitchenware",
       "reviews": {
         "summary": {
           "averageRating": 4.7,
@@ -15028,6 +15001,12 @@
     {
       "id": 30,
       "title": "High Quality Metal Snap Buttons Press Plier_9.5mm Metal Sewing Prong Ring Buttons Clip Plier _Diy Button Punch Tool For Baby Clothes_abaya Ring Metal Button Presser Machine Fastener Snap Buttons Kit Tich Button Tool Kit (Homeducts)",
+      "categoryPath": [
+        "Home",
+        "Home & Garden",
+        "Craft Supplies",
+        "Sewing Tools"
+      ],
       "price": "518",
       "originalPrice": "900",
       "discount": "42%",
@@ -15057,7 +15036,6 @@
       "description": "Introducing the High Quality Metal Snap Buttons Press Plier, a versatile tool for DIY enthusiasts and sewing projects. This 9.5mm metal sewing prong ring buttons clip plier is designed for effortless installation of snap buttons, making it ideal for baby clothes, abayas, and various sewing projects. The presser machine features a durable construction, ensuring long-lasting performance. With this fastener snap buttons kit, you can easily add professional-looking finishes to your sewing creations. A must-have for anyone looking to elevate their sewing and DIY projects. This tool is a game-changer for those who want to achieve professional results in their sewing endeavors.",
       "freeShipping": true,
       "inStock": true,
-      "breadcrumbCategory": "sewing",
       "reviews": {
         "summary": {
           "averageRating": 4.7,
@@ -15623,6 +15601,12 @@
     {
       "id": 31,
       "title": "ATM Cards Holder Wallet - Best Quality Card Holder Space Saving Wallets",
+      "categoryPath": [
+        "Home",
+        "Fashion",
+        "Wallets",
+        "Card Holders"
+      ],
       "price": "175",
       "originalPrice": "199",
       "discount": "12%",
@@ -15652,7 +15636,6 @@
       "description": "This wallet is designed with six compartments that provide ample space to store your cards. It is crafted from high-quality non-leather material, which ensures durability and longevity. The wallet is capable of holding up to one card, making it an ideal choice for men who are always on the move and need to keep their cards safe and secure. Additionally, the wallet features a sleek and stylish design that is sure to complement any outfit.",
       "freeShipping": true,
       "inStock": true,
-      "breadcrumbCategory": "wallets",
       "reviews": {
         "summary": {
           "averageRating": 4.6,
@@ -16183,6 +16166,12 @@
     {
       "id": 32,
       "title": "Sandals For Men || New Stylish and Tranding Sandals For Boys House slippers for men",
+      "categoryPath": [
+        "Home",
+        "Fashion",
+        "Shoes",
+        "Sandals"
+      ],
       "price": "319",
       "originalPrice": "389",
       "discount": "18%",
@@ -16212,7 +16201,6 @@
       "description": "Introducing the Camelo Sandals for Men, designed to deliver a perfect blend of business elegance, comfort, and everyday practicality.These sandals are crafted from high-quality durable materials, ensuring long-lasting performance, strength, and a refined premium finish. The business style design gives a sophisticated and modern look, making them suitable for office wear, meetings, and semi-formal occasions. Available in multiple color options, they easily complement different outfits and personal styles.The sandals feature a regular, comfortable fit, designed to suit standard men’s foot sizes while providing stability and ease of movement throughout the day. Key design elements include a sleek upper structure, supportive straps for better grip, and a cushioned sole that enhances walking comfort during long hours of use.For care, gently clean with a soft damp cloth, avoid soaking in water, and keep away from direct heat to maintain shape, texture, and durability.Perfect for business occasions and smart casual wear, these Camelo sandals combine style, comfort, and long-lasting quality for the modern man.",
       "freeShipping": true,
       "inStock": true,
-      "breadcrumbCategory": "shoes",
       "reviews": {
         "summary": {
           "averageRating": 4.7,
@@ -16719,6 +16707,12 @@
     {
       "id": 33,
       "title": "Original Metallic Body T9 Trimmer  3 in 1 Portable Smart Shaver and Grooming Machine For Men - Best Zero Cutting Under Shaving Machine For Men",
+      "categoryPath": [
+        "Home",
+        "Beauty & Personal Care",
+        "Grooming",
+        "Trimmers"
+      ],
       "price": "890",
       "originalPrice": "2999",
       "discount": "70%",
@@ -16748,7 +16742,6 @@
       "description": "Professional T9 3 in 1 Trimmer For MenUpgrade your grooming routine with the Hair T9 USB Rechargeable Electric Hair Trimmer! This versatile grooming kit features an adjustable blade clipper, trimmer, and shaver, making it perfect for all your hair trimming needs. With its USB rechargeable design, you can enjoy cordless convenience and powerful performance.Say 👋Goodbye to Irrelevent Hair From Beard Skin and Other Body Hair",
       "freeShipping": true,
       "inStock": true,
-      "breadcrumbCategory": "trimmer",
       "reviews": {
         "summary": {
           "averageRating": 4.6,
@@ -17195,6 +17188,12 @@
     {
       "id": 34,
       "title": "Socks Drawer Organizer Divider, 24 Cells Box Foldable Socks Organizer Closet Organizer Organizer Underwear Storage Boxes to Hold Socks",
+      "categoryPath": [
+        "Home",
+        "Home & Garden",
+        "Storage",
+        "Closet Organizers"
+      ],
       "price": "299",
       "originalPrice": "499",
       "discount": "40%",
@@ -17223,7 +17222,6 @@
       "description": "Socks Drawer Organizer Divider, 24 Cells Box Foldable Socks Organizer Closet Organizer Organizer Underwear Storage Boxes to Hold SocksSocks Storage Organizer with lid :The Lid can keep your items clean, apply to all places in the house-bedroom laundry, wardrobe, drawers or under bed, dustproof and waterproof, keep your home well-organized.space saving your cabinet.High-quality Durable Material:Made of polyester,PP board at the bottom,Convenient and practical,No strange smell,Washable,durable and breathable,much stronger than the non-woven fabric and cardboard.Perfect Socks Storage Organizer size: With 24 divided storage compartments, enough to neatly store and classify your socks, underwear, scarves, pantyhose,neck ties and other accessories.The individual compartments keep things neat, orderly and in place, allowing you to quickly find exactly what you need.Save Space: the organizer Box is collapsible for easy storage. Can be folded flat to save space when not in use.Simply remove the side support and PP board ,the wardrobe organizer can be fold into a lightweight, compact size. The foldable design also allows the organizer to be easily transported.Material: Polyester+PPsize: 43x29x13cmPackage Contents:1*Socks Organizer",
       "freeShipping": true,
       "inStock": true,
-      "breadcrumbCategory": "storage-organization",
       "reviews": {
         "summary": {
           "averageRating": 4.6,
@@ -17696,6 +17694,12 @@
     {
       "id": 35,
       "title": "Multifunction 8in1 Portable Led Flashlight Rechargeable LED Torch Flashlight | Car Emergency Tool with Window Breaker Hammer | Cutter | Flashlight Household Rechargeable Ultra Strong Outdoor Bright Led Flashlight",
+      "categoryPath": [
+        "Home",
+        "Home & Garden",
+        "Tools",
+        "Flashlights"
+      ],
       "price": "490",
       "originalPrice": "4201",
       "discount": "88%",
@@ -17725,7 +17729,6 @@
       "description": "Material: ABS+tungsten steel Color: black red Size: about 164mm×48.7mm Weight: about 140g Battery capacity: 1200mah Lighting mode: strong light-medium light-strobe-side light Waterproof: life waterproof Power output: emergency charging for mobile phones Perfect for camping, hiking, fishing, sailing, biking, outdoors and more The package includes: 1PCS×torch 1PCS×USB cable",
       "freeShipping": true,
       "inStock": true,
-      "breadcrumbCategory": "flashlight",
       "reviews": {
         "summary": {
           "averageRating": 4.6,
@@ -18230,6 +18233,11 @@
     {
       "id": 36,
       "title": "Helicopter with Radio Remote Control and Hand Sensor Charging Helicopter 2 in 1 Toys with 3D Light Toys for Boys Kids (Indoor & Outdoor Flying)(Multicolour)",
+      "categoryPath": [
+        "Home",
+        "Toys & Games",
+        "Educational Toys"
+      ],
       "price": "933",
       "originalPrice": "999",
       "discount": "7%",
@@ -18259,7 +18267,6 @@
       "description": "DescriptionMade of high-grade material, which is durable, wear-resisting, anti-corrosion, and eco-friendly. Easy to operate, with strong stability and flying effect, suitable for indoor flying play. PD Infrared induction helicopter: The product will automatically take off after starting up 3 seconds, intelligent hand induction helicopter, magically flies above your hand, you can use your hand to control it. Inductive suspension and collision protection, lightweight, easy to fly with a simple operation especially crafted for a beginner. It will cut off the power automatically when the fan blade is hindered, this will be safer. Flashing light on the bottom of the helicopter, which is cool and provides you a special look. Batteries for the remote are not included But the recommended battery is AAA 1.5V Alkaline. Camera Function : Not Available & Colour will be sent as per the availability.",
       "freeShipping": false,
       "inStock": true,
-      "breadcrumbCategory": "toys",
       "reviews": {
         "summary": {
           "averageRating": 4.4,
@@ -18702,6 +18709,12 @@
     {
       "id": 37,
       "title": "Electric Hair Remover Trimmer For Women Rechargeable 2 in 1",
+      "categoryPath": [
+        "Home",
+        "Beauty & Personal Care",
+        "Hair Removal",
+        "Electric Hair Removal"
+      ],
       "price": "999",
       "originalPrice": "1600",
       "discount": "38%",
@@ -18728,7 +18741,6 @@
       "description": "ORIGINAL 2 IN 1 TRIMMER FOR MEN ORIGINAL LONG BATTERY TIME PRICE 750",
       "freeShipping": true,
       "inStock": true,
-      "breadcrumbCategory": "hair-removal",
       "reviews": {
         "summary": {
           "averageRating": 4.9,
@@ -19205,6 +19217,12 @@
     {
       "id": 38,
       "title": "Sandals for men / New stylish sandals for men / Sandals for boys / Sandals for men",
+      "categoryPath": [
+        "Home",
+        "Fashion",
+        "Shoes",
+        "Sandals"
+      ],
       "price": "282",
       "originalPrice": "389",
       "discount": "28%",
@@ -19234,7 +19252,6 @@
       "description": "Comfortable and Comfortable and Stylish Footwear for Men & BoysComfortable and stylish footwear designed for casual, formal, and outdoor use. Perfect for warm weather, offering breathability, comfort, and ease of movement throughout the day.FabricMade from high-quality materials including leather, synthetic, rubber, or fabric, ensuring durability, flexibility, and long-lasting wear.StyleAvailable in multiple styles to suit different needs:Casual Sandals – Lightweight and stylish for everyday useFormal Sandals – Elegant designs for office and special occasionsSports Sandals – Durable and slip-resistant for outdoor activitiesEthnic Sandals – Traditional styles like Kolhapuri and MojarisFlip-Flops & Slippers – Easy slip-on comfort for home and beachColorAvailable in a wide range of colors including Black, Full Black, Brown, Dark Brown, Light Brown, Maroon, Dark Maroon, and Pearl Black.FitDesigned for a comfortable and secure fit with adjustable straps, buckle closures, or slip-on options to ensure proper support and stability.Design ElementsCushioned insoles for extra comfort and arch supportAnti-skid and slip-resistant outsole for safetyBreathable open design for airflowLightweight construction for easy movementStylish modern look suitable for multiple occasionsCare InformationClean with a soft, damp clothAvoid soaking in water for non-waterproof materialsDo not use harsh chemicals or bleachAir dry naturally away from direct sunlightStore in a cool, dry place when not in use",
       "freeShipping": true,
       "inStock": true,
-      "breadcrumbCategory": "shoes",
       "reviews": {
         "summary": {
           "averageRating": 4.8,
@@ -19727,6 +19744,12 @@
     {
       "id": 39,
       "title": "Pack of 06 Multi Colour Panties Soft Cotton Printed",
+      "categoryPath": [
+        "Home",
+        "Fashion",
+        "Underwear",
+        "Panties"
+      ],
       "price": "304",
       "originalPrice": "999",
       "discount": "70%",
@@ -19753,7 +19776,6 @@
       "description": "",
       "freeShipping": false,
       "inStock": true,
-      "breadcrumbCategory": "underwear",
       "reviews": {
         "summary": {
           "averageRating": 4.7,
@@ -20310,6 +20332,12 @@
     {
       "id": 40,
       "title": "Oppo+vivo Handsfree Oppo Original Handsfree and free Samsung original good quality Oppo Original Handsfree for Android and IOS Handsfree",
+      "categoryPath": [
+        "Home",
+        "Electronics",
+        "Audio",
+        "Headphones"
+      ],
       "price": "203",
       "originalPrice": "444",
       "discount": "54%",
@@ -20339,7 +20367,6 @@
       "description": "",
       "freeShipping": true,
       "inStock": true,
-      "breadcrumbCategory": "headphones",
       "reviews": {
         "summary": {
           "averageRating": 4.3,
@@ -20866,6 +20893,12 @@
     {
       "id": 41,
       "title": "ELMAY - Deal of 3  - Matte Foundation Pump, Primer Pump, Fixer Makeup Fixing Spray",
+      "categoryPath": [
+        "Home",
+        "Beauty & Personal Care",
+        "Makeup",
+        "Face Makeup"
+      ],
       "price": "489",
       "originalPrice": "799",
       "discount": "39%",
@@ -20893,7 +20926,6 @@
       "description": "Deal Of 3-Matte Foundation PumpPump PrimerFixing Makeup Fixer Spray",
       "freeShipping": true,
       "inStock": true,
-      "breadcrumbCategory": "makeup",
       "reviews": {
         "summary": {
           "averageRating": 4.6,
@@ -21381,6 +21413,12 @@
     {
       "id": 42,
       "title": "Manual Water Pump | For 19 Liter Cans Large - Bottle Water Pump Dispenser |",
+      "categoryPath": [
+        "Home",
+        "Home & Garden",
+        "Kitchenware",
+        "Water Pumps"
+      ],
       "price": "351",
       "originalPrice": "850",
       "discount": "59%",
@@ -21408,7 +21446,6 @@
       "description": "For use at home, school, office, factory, Sporting Events & Hospitals.Fits most standard water bottle sizes.Package Included: 1xPc.Effortlessly access fresh, clean water with our Manual Pump for Water Dispenser Bottle, designed to offer convenience and reliability in every pump. This versatile and user-friendly device is perfect for home, office, or outdoor use, making it an essential accessory for any water dispenser bottle.Crafted from durable, high-quality materials, the manual pump ensures longevity and consistent performance. Its ergonomic design allows for a comfortable grip and easy operation, reducing strain and effort while dispensing water. The pump features a precise, smooth-action piston that delivers a steady flow of water with minimal effort, making it ideal for all users, including children and the elderly.",
       "freeShipping": true,
       "inStock": true,
-      "breadcrumbCategory": "water-pump",
       "reviews": {
         "summary": {
           "averageRating": 4.7,
@@ -21879,6 +21916,12 @@
     {
       "id": 43,
       "title": "Sofa Cleaner - Fabric Cleaner - Upholstery Cleaner - Autoguys",
+      "categoryPath": [
+        "Home",
+        "Beauty & Personal Care",
+        "Skincare",
+        "Face Care"
+      ],
       "price": "258",
       "originalPrice": "490",
       "discount": "47%",
@@ -21908,7 +21951,6 @@
       "description": "Deep Cleaning Foam: Lifts and removes dust, dirt, body oils, and stubborn stains from fabric fibers.Safe on All Upholstery: Works on fabric, microfiber, velvet, linen, and synthetic blends.Stain & Odor Removal: Neutralizes unpleasant smells and restores fabric freshness.Quick-Dry Formula: Cleans without soaking – dries fast and leaves no sticky residue.Color-Safe: Maintains the original color and texture of your upholstery.Versatile Use: Perfect for sofas, chairs, cushions, car seats, curtains, and mattresses.Give your furniture a new lease on life with our Professional Sofa & Upholstery Cleaner. Its powerful foam-based formula penetrates deep into fabric fibers to break down dirt, food spills, sweat marks, and everyday grime — without fading or damaging the material.Whether you’re cleaning your living room sofa, office chairs, or car interiors, this cleaner ensures a fresh, hygienic, and beautifully restored finish every time. The gentle yet effective formulation not only cleans but also eliminates odors, leaving your space smelling crisp and inviting.Vacuum the surface to remove loose dust.Shake the bottle well and spray evenly on the fabric.Allow the foam to work for 2–3 minutes.Gently scrub using a soft brush or microfiber cloth.Wipe away residue with a clean, damp cloth and let dry naturally.Tip: For delicate fabrics, test on a small hidden area before full application.Keep away from direct sunlight and heat sources.Do not use on leather or suede.Keep out of reach of children and pets.Avoid contact with eyes; rinse immediately if contact occurs.Professional-grade cleaning at homeRevives dull, stained upholsteryLeaves a fresh, pleasant scentSafe and easy to useIdeal for homes, hotels, and cars",
       "freeShipping": false,
       "inStock": true,
-      "breadcrumbCategory": "skincare",
       "reviews": {
         "summary": {
           "averageRating": 4.8,
@@ -22380,6 +22422,12 @@
     {
       "id": 44,
       "title": "Vivid Visage Premium Hair Removal Spray for Men, Painless Natural Ingredient Formula, Long-Lasting & Waterproof, Single Pack",
+      "categoryPath": [
+        "Home",
+        "Beauty & Personal Care",
+        "Hair Removal",
+        "Electric Hair Removal"
+      ],
       "price": "180",
       "originalPrice": "399",
       "discount": "55%",
@@ -22408,7 +22456,6 @@
       "description": "🌿 Pansly Hair Removal Spray – Fast, Painless & Effective Hair Removal for Smooth, Silky SkinTired of cuts, razor burns, or painful waxing? Discover the gentle power of Pansly Hair Removal Spray — the smarter, smoother, and safer way to remove unwanted hair. Designed for both men and women, this painless hair removal solution offers a quick and easy alternative to shaving and traditional creams.With natural, skin-soothing ingredients and a fast-acting formula, Pansly delivers visible results in minutes — leaving your skin silky-soft, hydrated, and hair-free, without irritation or damage.✨ Why Choose Pansly?✅ Painless Hair Removal in MinutesNo razor, no wax, no pain. Pansly’s gentle formula breaks down hair from the root — allowing it to wipe away easily with no discomfort.✅ Full Body UseThis versatile spray is safe to use on legs, arms, underarms, chest, back, bikini area, and more. It’s effective on both coarse and fine hair, making it the perfect unisex hair removal spray.✅ Gentle on Sensitive SkinInfused with Aloe Vera, Chamomile Extract, and Vitamin E, Pansly is specially formulated for sensitive skin, helping to prevent redness, rashes, or irritation after use.✅ Long-Lasting SmoothnessEnjoy smooth, hair-free skin that lasts longer than shaving. With consistent use, regrowth becomes slower and finer — giving you more time between applications.✅ For Men & WomenWhether you're dealing with thick chest hair or fine leg hair, Pansly is tough on unwanted hair, but gentle on skin. It’s the best hair removal spray for both men and women.🌱 What’s Inside?1 x 150ml Pansly Hair Removal SprayNatural, plant-based formulaEasy spray nozzle for mess-free applicationWorks in as little as 5–10 minutesSuitable for all skin tones and hair types💬 Real People. Real Results.⭐️⭐️⭐️⭐️⭐️“I’ve tried other hair removal products, but nothing works as fast or as painlessly as Pansly. My skin feels soft and smooth for days!”– Melissa R.“As a guy, finding a hair removal product that actually works on thick hair is tough. Pansly does the job and leaves zero irritation. Highly recommend.”– Jason K.📌 Common Uses:Leg hair removal for womenBack and chest hair spray for menUnderarm and bikini line touch-upsFacial hair removal spray (chin, jawline – avoid eyes)Pansly Hair Removal SprayBest hair removal sprayPainless hair removal for men and womenHair removal spray for sensitive skinNatural body hair removal sprayPermanent hair removal spray alternativeSpray to remove unwanted hairQuick and safe hair removal at home",
       "freeShipping": true,
       "inStock": true,
-      "breadcrumbCategory": "hair-removal",
       "reviews": {
         "summary": {
           "averageRating": 4.7,
@@ -22943,6 +22990,12 @@
     {
       "id": 45,
       "title": "Mini chopper-juicer machine-blender machine-hand blender-Mini Grinder-Mini Electric Coffee Grinder-Coffee Bean & Dry Masala Spices Grinder Machine-Stainless Steel-2  Electric Grinder & Blender High Quality Machine-Kitchen Accessories",
+      "categoryPath": [
+        "Home",
+        "Home & Garden",
+        "Kitchenware",
+        "Choppers"
+      ],
       "price": "1570",
       "originalPrice": "4999",
       "discount": "69%",
@@ -22972,7 +23025,6 @@
       "description": "• 2 in 1 Mini chopper-juicer machine-blender machine. • Hand blender-Mini Grinder-Mini Electric Coffee Grinder. • Coffee Bean & Dry Masala Spices Grinder Machine. • Stainless Steel-2 Electric Grinder & Blender High Quality Machine. • Kitchen Accessories for Food Preparation.",
       "freeShipping": false,
       "inStock": true,
-      "breadcrumbCategory": "kitchenware",
       "reviews": {
         "summary": {
           "averageRating": 4.6,
@@ -23512,6 +23564,11 @@
     {
       "id": 46,
       "title": "Hasbro Gaming Jenga Tower Wooden Blocks Game BIG 54 Pieces",
+      "categoryPath": [
+        "Home",
+        "Toys & Games",
+        "Educational Toys"
+      ],
       "price": "399",
       "originalPrice": "602",
       "discount": "34%",
@@ -23541,7 +23598,6 @@
       "description": "Pull out a block without crashing the stack to win at JengaIncludes 54 Jenga hardwood blocks, stacking sleeve with instructionsSimple, solid, and timelessIt takes skill, strategy, and luck. Challenge yourself or play with friendsWin by being the last player to remove a block without causing the stack to crashWOOD BLOCK STACKING GAME: the Jenga kids game that people have loved for generationsBUILD THE TOWER: Slide out the wooden blocks one by one, and place them on top of the tower. Stack and balance the blocks but try not to let the tower fallTRAVEL GAMES FOR KIDS: Toss a Jenga game in your bag and bring it along on car rides, vacations, plane trips, and more to entertain your kids when on the goKIDS GAMES FOR 1 OR MORE PLAYERS: No friends around? No problem! Play Jenga solo or enjoy with a friendCHILDRENS GAMES MAKE GREAT GIFTS FOR KIDS: Looking for presents for kids? Games for kids are fun family gift ideas. The Jenga Mini game is easy to learn and makes a great gift for kids ages 6 and up",
       "freeShipping": true,
       "inStock": true,
-      "breadcrumbCategory": "toys",
       "reviews": {
         "summary": {
           "averageRating": 4.6,
@@ -24171,6 +24227,12 @@
     {
       "id": 47,
       "title": "SPECIL MULTANI SOHAN HALWA 500GM haf kg",
+      "categoryPath": [
+        "Home",
+        "Groceries",
+        "Sweets",
+        "Halwa"
+      ],
       "price": "489",
       "originalPrice": "790",
       "discount": "38%",
@@ -24194,7 +24256,6 @@
       "description": "SPECIL HALWA SHARINING WITH LOVE AND FAMILY DELIVERY FROM MULTAN WE ARE MANUFACTURE NOT RETAILOR 100% PURE",
       "freeShipping": true,
       "inStock": true,
-      "breadcrumbCategory": "morning-sweets",
       "reviews": {
         "summary": {
           "averageRating": 4.7,
@@ -24696,6 +24757,12 @@
     {
       "id": 48,
       "title": "Toothpaste Dispenser With Tooth Brush Holder",
+      "categoryPath": [
+        "Home",
+        "Beauty & Personal Care",
+        "Dental Care",
+        "Toothpaste"
+      ],
       "price": "449",
       "originalPrice": "899",
       "discount": "50%",
@@ -24723,7 +24790,6 @@
       "description": "Good qualityOne-touch operationUse convenientlyDurableWall-Mounted Toothbrush Holder with Automatic Toothpaste DispenserTransform your daily dental routine with this sleek, multifunctional toothbrush holder and toothpaste dispenser. Designed to keep your bathroom organized and clutter-free, this durable plastic accessory combines style, functionality, and convenience.Key Features:5 Slot Capacity: Safely stores up to five toothbrushes, making it perfect for families or shared spaces. Keep everyone’s brushes neat and easily accessible.Automatic Toothpaste Dispenser: Enjoy mess-free dispensing with a built-in manual operation system. Get the perfect amount of toothpaste with just a gentle press, reducing waste and saving time.Durable & Hygienic Material: Made of high-quality, eco-friendly plastic that resists wear and tear while protecting your toothbrushes from dust and contaminants.Wall-Mounted Design: Save counter space with this easy-to-install wall-mounted holder. Strong adhesive ensures a secure fit without drilling or damaging your walls.Universal Compatibility: Works with all standard toothbrush sizes and most toothpaste tubes, making it a versatile addition to any bathroom.Why Choose This Toothbrush Holder?Whether you’re looking to streamline your morning routine or add a modern touch to your bathroom, this holder is the perfect solution. Its compact, space-saving design keeps your essentials organized, while its durable build ensures long-lasting performance.",
       "freeShipping": true,
       "inStock": true,
-      "breadcrumbCategory": "dental-care",
       "reviews": {
         "summary": {
           "averageRating": 4.3,
@@ -25207,6 +25273,11 @@
     {
       "id": 49,
       "title": "Mini travel game for kids Tic -Tac -Toe game puzzle game, educational toys 6 Inches",
+      "categoryPath": [
+        "Home",
+        "Toys & Games",
+        "Educational Toys"
+      ],
       "price": "173",
       "originalPrice": "199",
       "discount": "13%",
@@ -25235,7 +25306,6 @@
       "description": "",
       "freeShipping": true,
       "inStock": true,
-      "breadcrumbCategory": "toys",
       "reviews": {
         "summary": {
           "averageRating": 4.6,
@@ -25681,6 +25751,12 @@
     {
       "id": 50,
       "title": "FV Foundation, Oil Absorb Ivory Liquid Foundation | Best Tube Foundation 30g",
+      "categoryPath": [
+        "Home",
+        "Beauty & Personal Care",
+        "Makeup",
+        "Face Makeup"
+      ],
       "price": "1599",
       "originalPrice": "2999",
       "discount": "47%",
@@ -25704,7 +25780,6 @@
       "description": "This FV Foundation is a high-quality liquid foundation that comes in a convenient 30g tube. It is perfect for any skin tone and is designed to absorb excess oil, leaving your skin looking flawless and radiant. Made in China, this foundation is a must-have for anyone looking for a reliable and effective makeup product. Its ivory shade is perfect for creating a natural, everyday look, while its single item packaging makes it easy to take with you on the go. Whether you're a makeup pro or just starting out, this FV Foundation is sure to become a staple in your beauty routine.",
       "freeShipping": true,
       "inStock": true,
-      "breadcrumbCategory": "makeup",
       "reviews": {
         "summary": {
           "averageRating": 4.7,
