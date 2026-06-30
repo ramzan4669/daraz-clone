@@ -438,7 +438,7 @@ body {
 }
 
 .footer-third .footer-inner {
-  display: block;
+  /*display: block;*/
   overflow: hidden;
 }
 
@@ -588,4 +588,3 @@ body {
   font-size: 14px;
   line-height: 16.1px;
 }
-

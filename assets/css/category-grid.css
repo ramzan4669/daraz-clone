@@ -49,7 +49,7 @@
 .category-grid-container .category-image {
   width: 80px;
   height: 80px;
-  display: block;
+  /*display: block;*/
 }
 
 .category-grid-container .category-image img {

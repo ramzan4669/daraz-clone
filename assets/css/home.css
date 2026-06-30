@@ -4,7 +4,6 @@
   box-sizing: content-box;
 }
 
-
 .hero-section {
   padding: 0;
 }
@@ -343,14 +342,14 @@
   width: 100%;
   max-width: 1188px;
   height: 375px;
-  display: block;
+  /*display: block;*/
   position: static;
   overflow: visible;
   box-sizing: border-box;
 }
 
 .flash-sale-section .card-rec-wrapper {
-  display: block;
+  /*display: block;*/
   font-size: 0;
 }
 
@@ -454,7 +453,7 @@
 
 .jfy-card-load-more {
   padding: 24px 0 9px;
-  display: block;
+  /*display: block;*/
   text-align: center;
 }
 
@@ -474,4 +473,3 @@
   box-sizing: border-box;
   max-width: 100%;
 }
-

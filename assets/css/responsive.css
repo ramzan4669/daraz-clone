@@ -292,7 +292,7 @@
   .product-page .product-block-main-information-detail {
     flex: 0 0 55%;
     width: 55%;
-    display: block;
+    /*display: block;*/
   }
 
   .product-page .product-block-product-detail {

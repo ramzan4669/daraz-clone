@@ -59,7 +59,7 @@
 .messages-button-title {
   margin: 0 0 0 8px;
   padding: 0;
-  display: block;
+  /*display: block;*/
   font-size: 18px;
   font-weight: 400;
   line-height: 20.7px;
