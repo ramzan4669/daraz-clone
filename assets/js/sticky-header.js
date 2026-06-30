@@ -1,7 +1,7 @@
 const header = document.querySelector(".head");
 const headTop = document.querySelector(".head-top");
 const gapElement = document.querySelector(".gap-div");
-const scrollContainer = document.getElementById("recyclerview") || window;
+const scrollContainer = document.getElementById("main-scroll") || window;
 
 let isCompact = false;
 let isGapHidden = false;

@@ -2,7 +2,8 @@ const modalWrapper = document.querySelector(".modal-wrapper");
 const modalContainer = document.querySelector(".modal-container");
 const signupContent = document.querySelector(".signup-content");
 const loginContent = document.querySelector(".login-content");
-const authScrollContainer = document.querySelector("#recyclerview") || document.body;
+const authScrollContainer =
+  document.querySelector("#main-scroll") || document.body;
 
 let switchTimeout = null;
 let pendingContent = null;
@@ -47,9 +48,16 @@ function switchContent(fromContent, toContent) {
 }
 
 function showLogin() {
-  if (loginContent.classList.contains("active") || modalContainer.classList.contains("switching")) return;
+  if (
+    loginContent.classList.contains("active") ||
+    modalContainer.classList.contains("switching")
+  )
+    return;
 
-  if (modalWrapper.classList.contains("modal-open") && signupContent.classList.contains("active")) {
+  if (
+    modalWrapper.classList.contains("modal-open") &&
+    signupContent.classList.contains("active")
+  ) {
     switchContent(signupContent, loginContent);
   } else {
     loginContent.classList.add("active");
@@ -58,9 +66,16 @@ function showLogin() {
 }
 
 function showSignup() {
-  if (signupContent.classList.contains("active") || modalContainer.classList.contains("switching")) return;
+  if (
+    signupContent.classList.contains("active") ||
+    modalContainer.classList.contains("switching")
+  )
+    return;
 
-  if (modalWrapper.classList.contains("modal-open") && loginContent.classList.contains("active")) {
+  if (
+    modalWrapper.classList.contains("modal-open") &&
+    loginContent.classList.contains("active")
+  ) {
     switchContent(loginContent, signupContent);
   } else {
     signupContent.classList.add("active");
@@ -104,7 +119,9 @@ document.querySelectorAll(".switch-to-login").forEach((el) => {
 
 document.querySelectorAll(".login-tab").forEach((tab) => {
   tab.addEventListener("click", () => {
-    document.querySelectorAll(".login-tab").forEach((t) => t.classList.remove("login-tab-active"));
+    document
+      .querySelectorAll(".login-tab")
+      .forEach((t) => t.classList.remove("login-tab-active"));
     tab.classList.add("login-tab-active");
 
     const target = tab.dataset.tab;

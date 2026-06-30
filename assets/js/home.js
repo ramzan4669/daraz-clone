@@ -94,9 +94,11 @@ function initLiftNav() {
   const liftNav = document.getElementById("lift-nav");
   if (!liftNav) return;
 
-  const scrollContainer = document.getElementById("recyclerview") || window;
+  const scrollContainer = document.getElementById("main-scroll") || window;
   function getScrollY() {
-    return scrollContainer === window ? window.scrollY : scrollContainer.scrollTop;
+    return scrollContainer === window
+      ? window.scrollY
+      : scrollContainer.scrollTop;
   }
   function scrollTo(y) {
     scrollContainer.scrollTo({ top: y, behavior: "smooth" });
@@ -144,18 +146,21 @@ function initLiftNav() {
     });
   });
 
-  const observer = new IntersectionObserver(function (entries) {
-    entries.forEach(function (entry) {
-      if (!entry.isIntersecting) return;
-      navItems.forEach(function (item) {
-        if (item.icon) item.icon.classList.remove("active");
+  const observer = new IntersectionObserver(
+    function (entries) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) return;
+        navItems.forEach(function (item) {
+          if (item.icon) item.icon.classList.remove("active");
+        });
+        const active = navItems.find(function (n) {
+          return n.id === entry.target.id;
+        });
+        if (active && active.icon) active.icon.classList.add("active");
       });
-      const active = navItems.find(function (n) {
-        return n.id === entry.target.id;
-      });
-      if (active && active.icon) active.icon.classList.add("active");
-    });
-  }, { root: null, rootMargin: "-50% 0px -50% 0px", threshold: 0 });
+    },
+    { root: null, rootMargin: "-50% 0px -50% 0px", threshold: 0 },
+  );
 
   navItems.forEach(function (item) {
     const section = document.getElementById(item.id);

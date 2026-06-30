@@ -117,13 +117,13 @@ body {
   overflow-x: hidden;
 }
 
-body.has-recyclerview,
+body.has-main-scroll,
 body.product-page {
   height: 100vh;
   overflow: hidden;
 }
 
-#recyclerview {
+#main-scroll {
   position: relative;
   height: 100%;
   overflow-x: hidden;
@@ -294,4 +294,3 @@ body.product-page {
     transform: rotate(360deg);
   }
 }
-

@@ -51,7 +51,6 @@
   opacity: 0.8;
 }
 
-
 .head-main {
   padding: 15px 0;
 }
@@ -226,54 +225,54 @@
   }
 
   /* Default home header: auto height so the inline-block gap line box expands to match Daraz (118.8px) */
-  body.has-recyclerview .head {
+  body.has-main-scroll .head {
     height: auto;
     min-height: 0;
     max-height: none;
   }
 
-  body.has-recyclerview .head .gap-div {
+  body.has-main-scroll .head .gap-div {
     height: 15px;
     max-height: 15px;
   }
 
   /* Non-compact: match Daraz item positions (logo/cart sit slightly below the search bar) */
-  body.has-recyclerview .head:not(.head-compact) .head-main {
+  body.has-main-scroll .head:not(.head-compact) .head-main {
     height: 75px;
     padding-top: 11px;
     padding-bottom: 15px;
     align-items: flex-start;
   }
 
-  body.has-recyclerview .head:not(.head-compact) .nav-logo {
+  body.has-main-scroll .head:not(.head-compact) .nav-logo {
     margin-top: 6px;
     margin-right: 2px;
   }
 
-  body.has-recyclerview .head:not(.head-compact) .header-cart {
+  body.has-main-scroll .head:not(.head-compact) .header-cart {
     margin-top: 7px;
   }
 
   /* Compact home header: 75px total */
-  body.has-recyclerview .head.head-compact {
+  body.has-main-scroll .head.head-compact {
     height: 75px;
     min-height: 75px;
     max-height: 75px;
   }
 
-  body.has-recyclerview .head.head-compact .head-main {
+  body.has-main-scroll .head.head-compact .head-main {
     height: 100%;
     padding-top: 15px;
     padding-bottom: 15px;
     align-items: flex-end;
   }
 
-  body.has-recyclerview .head.head-compact .nav-logo,
-  body.has-recyclerview .head.head-compact .header-cart {
+  body.has-main-scroll .head.head-compact .nav-logo,
+  body.has-main-scroll .head.head-compact .header-cart {
     margin-top: 0;
   }
 
-  body.has-recyclerview .head.head-compact .nav-logo {
+  body.has-main-scroll .head.head-compact .nav-logo {
     margin-right: 2px;
   }
 
