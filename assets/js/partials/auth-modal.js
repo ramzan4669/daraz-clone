@@ -24,6 +24,7 @@ export const authModalHtml = `    <div
               <div class="login-tab login-tab-active" data-tab="password">
                 Password
               </div>
+              <div class="login-tab-divider"></div>
               <div class="login-tab" data-tab="phone">Phone Number</div>
             </div>
             <!-- Password Tab Content -->

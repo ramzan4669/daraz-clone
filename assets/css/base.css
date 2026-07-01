@@ -130,6 +130,10 @@ body.product-page {
   overflow-y: scroll;
 }
 
+#main-scroll.overflow-y-hidden {
+  overflow-y: hidden;
+}
+
 .section-title {
   font-size: 22px;
   font-weight: 400;

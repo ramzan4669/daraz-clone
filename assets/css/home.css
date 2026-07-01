@@ -104,7 +104,7 @@
   font-weight: 400;
   line-height: 13.8px;
   width: 188px;
-  height: 344px;
+  height: 332px;
   padding: 6px;
   box-sizing: content-box;
 }
@@ -292,7 +292,7 @@
 }
 
 .flash-sale-section {
-  padding: 14px 0 0;
+  padding: 24px 0 0;
   max-width: 1188px;
   width: auto;
   margin: 0 auto;
@@ -323,7 +323,7 @@
 .card-flash-content-header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  /*align-items: center;*/
   padding: 0;
   margin: 0 0 10px;
   border-bottom: 1px solid #d5d5d5;
@@ -390,14 +390,14 @@
 .shop-more-btn {
   display: block;
   padding: 0 10px;
-  margin: 0 11px 0 0;
+  margin: 13px 11px 0;
   font-size: 14px;
   font-weight: 500;
   color: #f57224;
   background-color: transparent;
   border: 1px solid #f57224;
   border-radius: 2px;
-  height: 35px;
+  height: 37px;
   line-height: 35px;
   text-align: center;
   text-decoration: none;

@@ -9,7 +9,10 @@ let switchTimeout = null;
 let pendingContent = null;
 
 function openModal() {
+  const sbWidth = authScrollContainer.offsetWidth - authScrollContainer.clientWidth;
   authScrollContainer.classList.add("overflow-y-hidden");
+  const msgBtn = document.querySelector(".messages-button-container");
+  if (msgBtn) msgBtn.style.right = `calc(65px - ${sbWidth}px)`;
   modalWrapper.classList.remove("d-none");
   modalWrapper.classList.add("d-flex");
   void modalWrapper.offsetWidth;
@@ -28,6 +31,8 @@ function closeModal() {
     modalWrapper.classList.remove("d-flex");
     modalWrapper.classList.add("d-none");
     authScrollContainer.classList.remove("overflow-y-hidden");
+    const msgBtn = document.querySelector(".messages-button-container");
+    if (msgBtn) msgBtn.style.right = "";
   }, 200);
 }
 

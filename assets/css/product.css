@@ -777,8 +777,9 @@
 .guide-app-mobile:before {
   content: ".";
   position: absolute;
-  top: 0;
-  left: 4px;
+  top: -3px;
+  /*left: -4px;*/
+  right: 2px;
 }
 
 .guide-app-wrap {
@@ -2172,7 +2173,7 @@
 
 .mod-rating .detail {
   flex: 1;
-  padding-left: 30px;
+  /*padding-left: 30px;*/
 }
 
 .mod-rating .detail ul {
