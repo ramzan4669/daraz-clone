@@ -327,7 +327,7 @@
   padding: 0;
   margin: 0 0 10px;
   border-bottom: 1px solid #d5d5d5;
-  height: 60px;
+  height: 61px;
   background: #fff;
   box-sizing: border-box;
 }
@@ -472,4 +472,28 @@
   user-select: none;
   box-sizing: border-box;
   max-width: 100%;
+}
+
+/* ------------------------------------------------------------------
+   Home page auth (login/signup) modal only
+   Scoped with .home-page so it never matches the product page modal
+   (product <body> has .product-page, and home.css is not even loaded
+   on the product page).
+
+   Changes EVERYTHING in the modal to NotoSans-Regular EXCEPT the actual
+   <input> fields, which keep their original sans-serif from auth-modal.css
+   (we simply do not override .login-input / .login-phone-input /
+   .signup-phone-input here, so their base sans-serif rules still apply).
+
+   .modal-container sets the inherited font for all non-hardcoded text
+   (titles, tabs, buttons, hints, links, social labels, terms text, etc.)
+   via the `.modal-container * { font-family: inherit }` rule.
+   The two prefixes are <div> elements (the +92 country-code box), not
+   inputs, so they are overridden too.
+   Specificity (0,2,0) beats the base (0,1,0). Nothing else changes.
+   ------------------------------------------------------------------ */
+.home-page .modal-container,
+.home-page .login-phone-prefix,
+.home-page .signup-phone-prefix {
+  font-family: "NotoSans-Regular";
 }

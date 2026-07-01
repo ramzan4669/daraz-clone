@@ -1,5 +1,5 @@
 const SKU_CHECK_SVG =
-  '<svg class="app-icon-glyph app-icon svg-font" viewBox="0 0 1024 1024"><path d="M1023.6802 0v1023.3604H0.3198L1023.6802 0z" fill="#F57224"></path><path d="M652.072455 910.790756l-173.971268-173.331668 49.249219-49.249219 124.722049 124.722049 263.515303-263.515303 48.609619 49.249219-312.124922 312.124922z" fill="#FFFFFF"></path></svg>';
+  '<svg class="app-icon-glyph app-icon svg-font" viewBox="0 0 1024 1024"><use href="#appicon_checkOrange"></use></svg>';
 
 export function updateSKUSelection(product) {
   const skuProps = document.querySelectorAll(".sku-selector .sku-prop");
