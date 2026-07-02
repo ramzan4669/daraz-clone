@@ -122,7 +122,7 @@ export const authModalHtml = `    <div
                 </button>
               </div>
               <div class="login-hint">
-                Don't have an account?&nbsp;
+                Don't have an account?
                 <a class="signup-link switch-to-signup" href="#">Sign up</a>
               </div>
             </div>
