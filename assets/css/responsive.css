@@ -765,7 +765,7 @@
   }
 
   /* ── Messages Button ── */
-  .messages-button-container {
+  /*.messages-button-container {
     width: 120px;
     height: auto;
     border-radius: 0;
@@ -775,7 +775,7 @@
   .messages-button {
     width: 120px;
     height: auto;
-  }
+  }*/
 }
 
 /* ============================================================
@@ -970,7 +970,7 @@
     justify-content: center;
   }
 
-  .messages-button .messages-text {
+  .messages-button .messages-button-title {
     display: none;
   }
 

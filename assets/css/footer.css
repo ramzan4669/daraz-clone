@@ -481,6 +481,7 @@ body {
 
 .footer-fourth .footer-venture-list {
   display: flex;
+  white-space: nowrap;
 }
 
 .footer-fourth .footer-venture-list .footer-country {
