@@ -1229,6 +1229,11 @@
   height: 1em;
 }
 
+.i-icon {
+  width: 14px;
+  height: 14px;
+}
+
 img {
   border-style: none;
 }

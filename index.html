@@ -27,6 +27,8 @@
     <link rel="stylesheet" href="assets/css/messages-button.css" />
     <link rel="stylesheet" href="assets/css/auth-modal.css?v=8" />
     <link rel="stylesheet" href="assets/css/responsive.css" />
+    <script src="assets/js/partials/header.js"></script>
+    <script src="assets/js/partials/home-categories.js"></script>
     <script type="module" src="assets/js/home.js" defer></script>
     <script type="module" src="assets/js/sticky-header.js" defer></script>
     <script type="module" src="assets/js/partials/inject.js" defer></script>
@@ -35,51 +37,7 @@
   <body class="has-main-scroll home-page">
     <div id="main-scroll">
       <header class="bg-primary head sticky-top">
-        <div class="d-flex justify-content-end align-items-end head-top m-auto">
-          <a href="/">SAVE MORE ON APP</a>
-          <a href="/">SELL ON DARAZ</a>
-          <a href="/">HELP &amp; SUPPORT</a>
-          <a href="/" class="auth-trigger">LOGIN</a>
-          <a href="/" class="signup-trigger">SIGN UP</a>
-          <a href="/" lang="ur" dir="rtl">زبان تبدیل کریں</a>
-        </div>
-        <div class="d-flex align-items-end head-main m-auto">
-          <a href="/" class="nav-logo">
-            <img
-              src="https://lzd-img-global.slatic.net/us/domino/3b870cb043c7f8a9741cbf66329e294e.png"
-              alt="Daraz.pk"
-              class="logo-img"
-            />
-          </a>
-          <div class="head-search position-relative overflow-hidden">
-            <input type="search" readonly placeholder="Search in Daraz" />
-            <a href="/" class="search-button end-0 position-absolute"></a>
-          </div>
-          <a href="/" class="header-cart">
-            <svg
-              width="30"
-              height="30"
-              viewBox="0 0 32 32"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M4.51345 5H1.33325V3H6.15306L7.21972 8.33333H30.5315L27.5012 25H8.51345L4.51345 5ZM7.61972 10.3333L10.1531 23H25.832L28.135 10.3333H7.61972Z"
-                fill="white"
-              />
-              <path
-                d="M11.9999 28C11.9999 28.7364 11.403 29.3333 10.6666 29.3333C9.93021 29.3333 9.33325 28.7364 9.33325 28C9.33325 27.2636 9.93021 26.6667 10.6666 26.6667C11.403 26.6667 11.9999 27.2636 11.9999 28Z"
-                fill="white"
-              />
-              <path
-                d="M25.3333 29.3333C26.0696 29.3333 26.6666 28.7364 26.6666 28C26.6666 27.2636 26.0696 26.6667 25.3333 26.6667C24.5969 26.6667 23.9999 27.2636 23.9999 28C23.9999 28.7364 24.5969 29.3333 25.3333 29.3333Z"
-                fill="white"
-              />
-            </svg>
-          </a>
-        </div>
+        <script>if (typeof getHeaderTopHtml === "function") document.write(getHeaderTopHtml(false));</script>
         <!--gap container-->
         <div class="gap-div"></div>
       </header>
@@ -194,129 +152,7 @@
             <div class="home-card-header">
               <h2 class="home-card-title">Categories</h2>
             </div>
-            <div class="category-list d-flex flex-wrap">
-              <a class="category-item" href="/">
-                <div class="category-image">
-                  <img
-                    src="https://img.drz.lazcdn.com/static/pk/p/79eee1bb813d5641006f949693e8ddac.png_170x170q80.png"
-                  />
-                </div>
-                <div class="category-name">3D Printers</div>
-              </a>
-              <a class="category-item" href="/">
-                <div class="category-image">
-                  <img
-                    src="https://img.drz.lazcdn.com/static/pk/p/ef7bbcb7f09bda1dc8141e3186f83f5b.jpg_170x170q80.jpg"
-                  />
-                </div>
-                <div class="category-name">Pasta, Noodle & Pizza Tools</div>
-              </a>
-              <a class="category-item" href="/">
-                <div class="category-image">
-                  <img
-                    src="https://img.drz.lazcdn.com/static/pk/p/eb24729ada7367ba286bd9a1106f5794.jpg_170x170q80.jpg"
-                  />
-                </div>
-                <div class="category-name">Screen Protectors</div>
-              </a>
-              <a class="category-item" href="/">
-                <div class="category-image">
-                  <img
-                    src="https://img.drz.lazcdn.com/static/pk/p/8753c48009ef69f6369835eef4e7e55c.jpg_170x170q80.jpg"
-                  />
-                </div>
-                <div class="category-name">Casserole Pots</div>
-              </a>
-              <a class="category-item" href="/">
-                <div class="category-image">
-                  <img
-                    src="https://img.drz.lazcdn.com/static/pk/p/0d994c4238b17284f2699f83a5f0c82d.jpg_170x170q80.jpg"
-                  />
-                </div>
-                <div class="category-name">Hoodies & Sweatshirts</div>
-              </a>
-              <a class="category-item" href="/">
-                <div class="category-image">
-                  <img
-                    src="https://img.drz.lazcdn.com/g/kf/S471638c4573e489ea3dd7d8f5a876270w.jpg_170x170q80.jpg"
-                  />
-                </div>
-                <div class="category-name">Toy Boxes & Organisers</div>
-              </a>
-              <a class="category-item" href="/">
-                <div class="category-image">
-                  <img
-                    src="https://img.drz.lazcdn.com/static/pk/p/c8ed001df64363aaeb3f8364ccb8f797.jpg_170x170q80.jpg"
-                  />
-                </div>
-                <div class="category-name">Pepper</div> </a
-              ><a class="category-item" href="/">
-                <div class="category-image">
-                  <img
-                    src="https://img.drz.lazcdn.com/collect/sg/p/d80414ab4ca90792680ed321b6b5208e.jpg_170x170q80.jpg"
-                  />
-                </div>
-                <div class="category-name">Dining Sets</div> </a
-              ><a class="category-item" href="/">
-                <div class="category-image">
-                  <img
-                    src="https://img.drz.lazcdn.com/static/pk/p/aba332825aae6f8be2c78ac8eb9ff7a3.jpg_170x170q80.jpg"
-                  />
-                </div>
-                <div class="category-name">Microphones</div> </a
-              ><a class="category-item" href="/">
-                <div class="category-image">
-                  <img
-                    src="https://img.drz.lazcdn.com/static/pk/p/d7c6da20512a60d5eea68d7dfc1ecec8.jpg_170x170q80.jpg"
-                  />
-                </div>
-                <div class="category-name">Leashes & Harnesses</div> </a
-              ><a class="category-item" href="/">
-                <div class="category-image">
-                  <img
-                    src="https://img.drz.lazcdn.com/static/pk/p/3d0ed906e093468fbeedf37f3a37eaff.jpg_170x170q80.jpg"
-                  />
-                </div>
-                <div class="category-name">Donate to Educate</div> </a
-              ><a class="category-item" href="/">
-                <div class="category-image">
-                  <img
-                    src="https://img.drz.lazcdn.com/static/pk/p/33e449072df1ca5b35d2628a8f9a66e9.jpg_170x170q80.jpg"
-                  />
-                </div>
-                <div class="category-name">Coloring & Drawing</div> </a
-              ><a class="category-item" href="/">
-                <div class="category-image">
-                  <img
-                    src="https://img.drz.lazcdn.com/static/pk/p/0bc0c8034c12d51041a2b48a116b3794.jpg_170x170q80.jpg"
-                  />
-                </div>
-                <div class="category-name">Heatsinks</div> </a
-              ><a class="category-item" href="/">
-                <div class="category-image">
-                  <img
-                    src="https://img.drz.lazcdn.com/static/pk/p/2f9923d3dac8ca8a7a687603fedd98f8.png_170x170q80.png"
-                  />
-                </div>
-                <div class="category-name">Others</div> </a
-              ><a class="category-item" href="/">
-                <div class="category-image">
-                  <img
-                    src="https://img.drz.lazcdn.com/static/pk/p/0f98800784829e6807b13e81467da0e9.jpg_170x170q80.jpg"
-                  />
-                </div>
-                <div class="category-name">
-                  Air Dryers, Blowers & Blades
-                </div> </a
-              ><a class="category-item" href="/">
-                <div class="category-image">
-                  <img
-                    src="https://img.drz.lazcdn.com/g/kf/S1847b6ea45d64d71809cfaa9a94e4b21v.jpg_170x170q80.jpg"
-                  />
-                </div>
-                <div class="category-name">Everyday Glassware</div>
-              </a>
-            </div>
+            <script>if (typeof getCategoryListHtml === "function") document.write(getCategoryListHtml());</script>
           </div>
         </section>
 

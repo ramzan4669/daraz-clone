@@ -606,7 +606,7 @@
 
 .delivery-header {
   box-sizing: border-box;
-  align-items: center;
+  align-self: end;
   width: 100%;
   display: table;
 }
@@ -619,7 +619,7 @@
   font-weight: 500;
   line-height: 12px;
   display: flex;
-  padding: 25px 16px 2px;
+  padding: 20px 16px 3px;
 }
 
 .delivery-header-location {
@@ -642,12 +642,11 @@
 
 .location-link-change {
   font-family:
-    Roboto,
+    /*Roboto,
     -apple-system,
     BlinkMacSystemFont,
     "Helvetica Neue",
-    Helvetica,
-    sans-serif;
+    Helvetica,*/ sans-serif;
   font-size: 13px;
   font-weight: 500;
 }
@@ -657,8 +656,9 @@
 }
 
 .delivery-header-tooltip {
-  text-align: right;
+  text-align: left;
   display: table-cell;
+  padding-bottom: 2px;
 }
 
 .location-link,
@@ -701,7 +701,7 @@
   vertical-align: middle;
   font-size: 24px;
   display: table-cell;
-  margin-right: 5px;
+  margin-right: 6px;
 }
 
 .location-address {
@@ -3235,7 +3235,7 @@
 }
 
 .delivery-option {
-  padding: 5px 16px;
+  padding: 6px 16px;
 }
 
 .qty-picker-inline .qty-picker-input {
