@@ -100,6 +100,29 @@
     opacity 0.2s ease;
 }
 
+/* Reserved space for the deferred inject.js header mount, to prevent layout
+   shift before the module fills #header-top-mount. Expanded height is
+   .head-top (25px) + .head-main (75px) = 100px on both pages (hot-keywords
+   are position:absolute, out of flow). The mobile header is fluid, so no
+   fixed reserve there. */
+#header-top-mount {
+  min-height: 100px;
+}
+
+/* On scroll, sticky-header.js adds .head-compact and .head-top-hidden, and the
+   .head-main shrinks (to 75px). Drop the reserve so the mount collapses with
+   its children — otherwise this min-height holds the header open and breaks
+   sticky compaction. */
+.head.head-compact #header-top-mount {
+  min-height: 0;
+}
+
+@media (max-width: 991px) {
+  #header-top-mount {
+    min-height: 0;
+  }
+}
+
 .gap-hidden {
   max-height: 0;
   opacity: 0;
@@ -310,8 +333,20 @@
   padding: 0 8px 0 0;
   font-size: 12px;
   white-space: nowrap;
+  position: relative;
 }
 
 .product-page .head-search .hot-keywords-container a:not(:first-child) {
   padding-left: 8px;
+}
+
+.divider-before::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  background-color: #e9e9e9;
+  width: 1px;
+  height: 12px;
 }

@@ -1,17 +1,15 @@
 /*
  * Shared site header (top bar) partial.
  *
- * This is a deliberate, classic (non-module) script so it can be loaded as a
- * synchronous <script src="..."> in the <head>. The page then calls
- * getHeaderTopHtml(product) from a synchronous inline <script> placed exactly
- * where the header top bar must appear, via document.write(). Writing the
- * markup synchronously during parsing keeps <header> a direct child of
- * #main-scroll (so Bootstrap sticky-top still works) and avoids any layout
- * shift / flash, because the header is in the DOM before the parser advances
- * past that point. The returned string is byte-for-byte identical to the
- * previously hand-written top-bar markup of each page (verified by diff).
+ * ES module imported by inject.js. getHeaderTopHtml(product) returns the
+ * top-bar markup; inject.js writes it into the #header-top-mount placeholder
+ * (inside <header>) via innerHTML. <header> stays a direct child of
+ * #main-scroll (so Bootstrap sticky-top still works); the mount's reserved
+ * min-height (header.css) prevents layout shift while the deferred module
+ * fills it. The returned string is byte-for-byte identical to the previously
+ * hand-written top-bar markup of each page (verified by diff).
  */
-function getHeaderTopHtml(product) {
+export function getHeaderTopHtml(product) {
   var headMainClass = product ? 'head-main product-header' : 'head-main';
   var searchClass = product
     ? 'position-relative'
@@ -75,8 +73,4 @@ function getHeaderTopHtml(product) {
     }).join('\n');
   }
   return html;
-}
-
-if (typeof module !== 'undefined' && module.exports) {
-  module.exports = { getHeaderTopHtml: getHeaderTopHtml };
 }

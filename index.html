@@ -27,17 +27,15 @@
     <link rel="stylesheet" href="assets/css/messages-button.css" />
     <link rel="stylesheet" href="assets/css/auth-modal.css?v=8" />
     <link rel="stylesheet" href="assets/css/responsive.css" />
-    <script src="assets/js/partials/header.js"></script>
-    <script src="assets/js/partials/home-categories.js"></script>
+    <script type="module" src="assets/js/partials/inject.js" defer></script>
     <script type="module" src="assets/js/home.js" defer></script>
     <script type="module" src="assets/js/sticky-header.js" defer></script>
-    <script type="module" src="assets/js/partials/inject.js" defer></script>
     <script type="module" src="assets/js/auth-modal.js" defer></script>
   </head>
   <body class="has-main-scroll home-page">
     <div id="main-scroll">
       <header class="bg-primary head sticky-top">
-        <script>if (typeof getHeaderTopHtml === "function") document.write(getHeaderTopHtml(false));</script>
+        <div id="header-top-mount"></div>
         <!--gap container-->
         <div class="gap-div"></div>
       </header>
@@ -152,7 +150,7 @@
             <div class="home-card-header">
               <h2 class="home-card-title">Categories</h2>
             </div>
-            <script>if (typeof getCategoryListHtml === "function") document.write(getCategoryListHtml());</script>
+            <div id="category-list-mount"></div>
           </div>
         </section>
 

@@ -1,5 +1,5 @@
 /* Auto-extracted from the original mega-menu markup. */
-var CATEGORIES = [
+export const CATEGORIES = [
   {
     "name": "Electronic Accessories",
     "children": [

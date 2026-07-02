@@ -3,11 +3,12 @@ import { getProductsData } from "./utils.js";
 export function initHotKeywords() {
   getProductsData().then(function (d) {
     if (!d || !d.hotKeywords) return;
-    const container = document.querySelector('.hot-keywords-container');
+    const container = document.querySelector(".hot-keywords-container");
     if (!container) return;
-    container.innerHTML = d.hotKeywords
-      .map(function (k) { return '<a href="/">' + k + '</a>'; })
-      .join('<span class="sep">&nbsp;&nbsp;|&nbsp;&nbsp;</span>');
+    container.innerHTML = d.hotKeywords.map(function (k, index) {
+      if (index == 0) return '<a href="/">' + k + "</a>";
+      else return '<a class="divider-before"href="/">' + k + "</a>";
+    });
   });
 }
 

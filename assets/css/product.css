@@ -198,6 +198,13 @@
   overflow: hidden;
 }
 
+/* Hide the #mega-menu-mount placeholder <li> until inject.js replaces it
+   (via outerHTML) with the real category <li> tree. Kept in CSS rather than
+   an inline style attribute, so the HTML stays free of inline styles. */
+#mega-menu-mount {
+  display: none;
+}
+
 .site-nav-menu .site-menu-nav-container {
   width: 1188px;
   height: 100%;

@@ -1,12 +1,11 @@
 /*
  * Home page category grid partial.
  *
- * Classic (non-module) script loaded synchronously in <head>. The page calls
- * getCategoryListHtml() from a synchronous inline <script> placed inside
- * .home-card (after .home-card-header) via document.write(). This writes the
- * entire .category-list div, so the <script> is a child of .home-card (which
- * has no :nth-child selectors) and .category-list contains only <a> children
- * (preserving the .category-item:nth-child(8n) border pattern exactly).
+ * ES module imported by inject.js. getCategoryListHtml() returns the
+ * .category-list div; inject.js writes it into the #category-list-mount
+ * placeholder (inside .home-card, after .home-card-header) via innerHTML.
+ * .category-list contains only <a> children, preserving the
+ * .category-item:nth-child(8n) border pattern exactly.
  *
  * The category-list is a flex container (d-flex flex-wrap) with default
  * white-space:normal, so whitespace between flex items is collapsed and not
@@ -14,7 +13,7 @@
  *
  * DOM-verified: same tags, classes, text, src, and hrefs as the original.
  */
-var HOME_CATEGORIES = [
+export const HOME_CATEGORIES = [
   { src: "https://img.drz.lazcdn.com/static/pk/p/79eee1bb813d5641006f949693e8ddac.png_170x170q80.png", name: "3D Printers" },
   { src: "https://img.drz.lazcdn.com/static/pk/p/ef7bbcb7f09bda1dc8141e3186f83f5b.jpg_170x170q80.jpg", name: "Pasta, Noodle & Pizza Tools" },
   { src: "https://img.drz.lazcdn.com/static/pk/p/eb24729ada7367ba286bd9a1106f5794.jpg_170x170q80.jpg", name: "Screen Protectors" },
@@ -33,7 +32,7 @@ var HOME_CATEGORIES = [
   { src: "https://img.drz.lazcdn.com/g/kf/S1847b6ea45d64d71809cfaa9a94e4b21v.jpg_170x170q80.jpg", name: "Everyday Glassware" }
 ];
 
-function getCategoryListHtml() {
+export function getCategoryListHtml() {
   function esc(s) {
     return String(s)
       .replace(/&/g, '&amp;')
@@ -53,8 +52,4 @@ function getCategoryListHtml() {
   }
   html += '</div>';
   return html;
-}
-
-if (typeof module !== 'undefined' && module.exports) {
-  module.exports = { HOME_CATEGORIES: HOME_CATEGORIES, getCategoryListHtml: getCategoryListHtml };
 }

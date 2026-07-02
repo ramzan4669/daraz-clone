@@ -99,3 +99,16 @@
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
   position: relative;
 }
+
+/* Reserved space for the deferred inject.js category mount, to prevent layout
+   shift before the module fills #category-list-mount. Matches .category-list
+   min-height (297px); reset on mobile where the grid is fluid. */
+#category-list-mount {
+  min-height: 297px;
+}
+
+@media (max-width: 991px) {
+  #category-list-mount {
+    min-height: 0;
+  }
+}

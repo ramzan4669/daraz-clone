@@ -27,22 +27,19 @@
     <link rel="stylesheet" href="assets/css/auth-modal.css?v=8" />
     <link rel="stylesheet" href="assets/css/responsive.css" />
 
-    <script src="assets/js/partials/header.js"></script>
-    <script src="assets/js/partials/categories-data.js"></script>
-    <script src="assets/js/partials/mega-menu.js"></script>
+    <script type="module" src="assets/js/partials/inject.js" defer></script>
     <script type="module" src="assets/js/sticky-header.js" defer></script>
     <script type="module" src="assets/js/product-detail.js" defer></script>
     <script
       src="https://unpkg.com/drift-zoom@0.5.1/dist/Drift.min.js"
       defer
     ></script>
-    <script type="module" src="assets/js/partials/inject.js" defer></script>
     <script type="module" src="assets/js/auth-modal.js" defer></script>
   </head>
   <body class="product-page">
     <div id="main-scroll">
       <header class="bg-primary head sticky-top">
-      <script>if (typeof getHeaderTopHtml === "function") document.write(getHeaderTopHtml(true));</script>
+      <div id="header-top-mount"></div>
 
       <div class="site-nav-menu site-nav-menu-active">
         <div class="site-menu-nav-container">
@@ -53,7 +50,7 @@
             <div class="site-menu-nav-menu">
               <div class="site-nav-menu-dropdown">
                 <ul class="site-menu-root">
-                  <script>if (typeof getMegaMenuTreeHtml === "function") document.write(getMegaMenuTreeHtml());</script>
+                  <li id="mega-menu-mount"></li>
                 </ul>
               </div>
             </div>
